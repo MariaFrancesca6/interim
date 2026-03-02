@@ -1,0 +1,675 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/interim/#"
+     xml:base="https://w3id.org/interim/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/interim/#">
+        <owl:versionIRI rdf:resource="https://w3id.org/interim/#"/>
+        <owl:imports rdf:resource="https://w3id.org/geko/#"/>
+        <terms:creator rdf:resource="https://orcid.org/0009-0003-0559-0409"/>
+        <terms:description xml:lang="en">INTERIM Ontology describes intermedial relations.</terms:description>
+        <terms:title>INTERIM Ontology</terms:title>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isPartOf"/>
+    
+
+
+    <!-- http://purl.org/emmedi/hico/hasInterpretationCriterion -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/emmedi/hico/hasInterpretationCriterion"/>
+    
+
+
+    <!-- http://purl.org/emmedi/hico/hasInterpretationType -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/emmedi/hico/hasInterpretationType"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#hasBody -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/oa#hasBody"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#hasSelector -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/oa#hasSelector"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#hasSource -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/oa#hasSource"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#hasTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/oa#hasTarget"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#motivatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/oa#motivatedBy"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadMember -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadMember">
+        <rdfs:domain rdf:resource="https://w3id.org/geko/#Ekphrasis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+        <rdfs:range rdf:resource="http://purl.org/emmedi/hico/InterpretationAct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geko/#hasAuthor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geko/#hasAuthor"/>
+    
+
+
+    <!-- https://w3id.org/geko/#hasEkphrasticModality -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geko/#hasEkphrasticModality"/>
+    
+
+
+    <!-- https://w3id.org/geko/#hasIconicReferent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geko/#hasIconicReferent"/>
+    
+
+
+    <!-- https://w3id.org/geko/#hasTextualReferent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geko/#hasTextualReferent"/>
+    
+
+
+    <!-- https://w3id.org/interim/#hasSourceMedium -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/interim/#hasSourceMedium">
+        <rdfs:domain rdf:resource="https://w3id.org/interim/#IntermedialRelation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">This property identifies the source medium in the relation.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/interim/#hasTargetMedium -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/interim/#hasTargetMedium">
+        <rdfs:domain rdf:resource="https://w3id.org/interim/#IntermedialRelation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">This property identifies the target medium in the relation.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/interim/#objectProducedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/interim/#objectProducedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/interim/#producesObject"/>
+        <rdfs:domain rdf:resource="https://w3id.org/interim/#IntermedialObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/interim/#IntermedialRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/interim/#producesObject -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/interim/#producesObject">
+        <rdfs:domain rdf:resource="https://w3id.org/interim/#IntermedialRelation"/>
+        <rdfs:range rdf:resource="https://w3id.org/interim/#IntermedialObject"/>
+        <rdfs:comment xml:lang="en">This property links the relation to the intermedial object.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mlao/#hasAnchor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mlao/#hasAnchor">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+        <rdfs:range rdf:resource="https://w3id.org/mlao/#Anchor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mlao/#hasConceptualLevel -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mlao/#hasConceptualLevel">
+        <rdfs:domain rdf:resource="https://w3id.org/mlao/#Anchor"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/icon/ontology/IconographicalSubject"/>
+                    <rdf:Description rdf:about="https://w3id.org/icon/ontology/IconologicalSubject"/>
+                    <rdf:Description rdf:about="https://w3id.org/icon/ontology/PreiconographicalSubject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mlao/#isAnchoredTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mlao/#isAnchoredTo">
+        <rdfs:domain rdf:resource="https://w3id.org/mlao/#Anchor"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F1_Work -->
+
+
+    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F2_Expression -->
+
+
+    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+    
+
+
+    <!-- http://purl.org/emmedi/hico/InterpretationAct -->
+
+
+    <owl:Class rdf:about="http://purl.org/emmedi/hico/InterpretationAct"/>
+    
+
+
+    <!-- http://purl.org/emmedi/hico/InterpretationCriterion -->
+
+
+    <owl:Class rdf:about="http://purl.org/emmedi/hico/InterpretationCriterion"/>
+    
+
+
+    <!-- http://purl.org/emmedi/hico/InterpretationType -->
+
+
+    <owl:Class rdf:about="http://purl.org/emmedi/hico/InterpretationType"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#Annotation -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/oa#Annotation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#FragmentSelector -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/oa#FragmentSelector"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#Motivation -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/oa#Motivation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#SpecificResource -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/oa#SpecificResource"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#Text -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/oa#Text"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#TextualBody -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/oa#TextualBody"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Collection -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Collection"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://iiif.io/api/model/shared-canvas/1.0/#Canvas -->
+
+
+    <owl:Class rdf:about="https://iiif.io/api/model/shared-canvas/1.0/#Canvas"/>
+    
+
+
+    <!-- https://iiif.io/api/model/shared-canvas/1.0/#Manifest -->
+
+
+    <owl:Class rdf:about="https://iiif.io/api/model/shared-canvas/1.0/#Manifest"/>
+    
+
+
+    <!-- https://w3id.org/geko/#Ekphrasis -->
+
+
+    <owl:Class rdf:about="https://w3id.org/geko/#Ekphrasis"/>
+    
+
+
+    <!-- https://w3id.org/geko/#MimeticEkphrasis -->
+
+
+    <owl:Class rdf:about="https://w3id.org/geko/#MimeticEkphrasis"/>
+    
+
+
+    <!-- https://w3id.org/geko/#NotionalEkphrasis -->
+
+
+    <owl:Class rdf:about="https://w3id.org/geko/#NotionalEkphrasis"/>
+    
+
+
+    <!-- https://w3id.org/icon/ontology/IconographicalSubject -->
+
+
+    <owl:Class rdf:about="https://w3id.org/icon/ontology/IconographicalSubject"/>
+    
+
+
+    <!-- https://w3id.org/icon/ontology/IconologicalSubject -->
+
+
+    <owl:Class rdf:about="https://w3id.org/icon/ontology/IconologicalSubject"/>
+    
+
+
+    <!-- https://w3id.org/icon/ontology/PreiconographicalSubject -->
+
+
+    <owl:Class rdf:about="https://w3id.org/icon/ontology/PreiconographicalSubject"/>
+    
+
+
+    <!-- https://w3id.org/interim/#IntermedialObject -->
+
+
+    <owl:Class rdf:about="https://w3id.org/interim/#IntermedialObject">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/interim/#IntermedialRelation"/>
+        <rdfs:comment xml:lang="en">The resulting object in which the intermedial relation is instantiated.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/interim/#IntermedialRelation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/interim/#IntermedialRelation">
+        <owl:equivalentClass rdf:resource="https://w3id.org/miro/IntermedialRelation"/>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <rdfs:comment xml:lang="en">The core class of INTERIM representing the relationship between two different media.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miro/EkphrasticRelation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/miro/EkphrasticRelation"/>
+    
+
+
+    <!-- https://w3id.org/miro/IntermedialReference -->
+
+
+    <owl:Class rdf:about="https://w3id.org/miro/IntermedialReference"/>
+    
+
+
+    <!-- https://w3id.org/miro/IntermedialRelation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/miro/IntermedialRelation"/>
+    
+
+
+    <!-- https://w3id.org/miro/MediaCombination -->
+
+
+    <owl:Class rdf:about="https://w3id.org/miro/MediaCombination"/>
+    
+
+
+    <!-- https://w3id.org/miro/MediaTransformation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/miro/MediaTransformation"/>
+    
+
+
+    <!-- https://w3id.org/mlao/#Anchor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mlao/#Anchor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/geko/#denotation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/geko/#denotation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/geko/#dynamization -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/geko/#dynamization">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/geko/#integration -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/geko/#integration">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/geko/#modalitiesScheme -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/geko/#modalitiesScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/interim/#mediaScheme -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/interim/#mediaScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <terms:title xml:lang="en">Media Type</terms:title>
+        <skos:definition xml:lang="en">Controlled vocabulary of media types.</skos:definition>
+        <skos:prefLabel xml:lang="en">Media type scheme</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/interim/#mediumImage -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/interim/#mediumImage">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="en">Image pertains to the broader category of visual media</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/interim/#mediaScheme"/>
+        <skos:prefLabel xml:lang="en">Image</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/interim/#mediumText -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/interim/#mediumText">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="en">Text pertains to the broader category of linguistic media</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/interim/#mediaScheme"/>
+        <skos:prefLabel xml:lang="en">Text</skos:prefLabel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
