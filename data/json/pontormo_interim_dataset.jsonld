@@ -1,0 +1,962 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    {
+      "@version": 1.1,
+      "interim": "https://w3id.org/interim/#",
+      "geko": "https://w3id.org/geko/#",
+      "mlao": "https://w3id.org/mlao/#",
+      "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+      "lrmoo": "http://iflastandards.info/ns/lrm/lrmoo/",
+      "icon": "https://w3id.org/icon/ontology/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "hico": "http://purl.org/emmedi/hico/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dcterms": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "id": {
+        "@id": "@id",
+        "@type": "@id"
+      },
+      "type": {
+        "@id": "@type",
+        "@type": "@id"
+      },
+      "IntermedialRelation": "interim:IntermedialRelation",
+      "IntermedialObject": "interim:IntermedialObject",
+      "Medium": "interim:Medium",
+      "Ekphrasis": "geko:Ekphrasis",
+      "MimeticEkphrasis": "geko:MimeticEkphrasis",
+      "NotionalEkphrasis": "geko:NotionalEkphrasis",
+      "Anchor": "mlao:Anchor",
+      "PreiconographicalSubject": "icon:PreiconographicalSubject",
+      "IconographicalSubject": "icon:IconographicalSubject",
+      "IconologicalSubject": "icon:IconologicalSubject",
+      "F1_Work": "lrmoo:F1_Work",
+      "F2_Expression": "lrmoo:F2_Expression",
+      "hasSourceMedium": {
+        "@id": "interim:hasSourceMedium",
+        "@type": "@id"
+      },
+      "hasTargetMedium": {
+        "@id": "interim:hasTargetMedium",
+        "@type": "@id"
+      },
+      "producesObject": {
+        "@id": "interim:producesObject",
+        "@type": "@id"
+      },
+      "objectProducedBy": {
+        "@id": "interim:objectProducedBy",
+        "@type": "@id"
+      },
+      "hasAuthor": {
+        "@id": "geko:hasAuthor",
+        "@type": "@id"
+      },
+      "isAuthorOf": {
+        "@id": "geko:isAuthorOf",
+        "@type": "@id"
+      },
+      "hasIconicReferent": {
+        "@id": "geko:hasIconicReferent",
+        "@type": "@id"
+      },
+      "isIconicReferentOf": {
+        "@id": "geko:isIconicReferentOf",
+        "@type": "@id"
+      },
+      "hasTextualReferent": {
+        "@id": "geko:hasTextualReferent",
+        "@type": "@id"
+      },
+      "isTextualReferentOf": {
+        "@id": "geko:isTextualReferentOf",
+        "@type": "@id"
+      },
+      "hasEkphrasticModality": {
+        "@id": "geko:hasEkphrasticModality",
+        "@type": "@id"
+      },
+      "modalitiesScheme": "geko:modalitiesScheme",
+      "denotation": "geko:denotation",
+      "dynamization": "geko:dynamization",
+      "integration": "geko:integration",
+      "mediaScheme": "interim:mediaScheme",
+      "image": "interim:mediumImage",
+      "text": "interim:mediumText",
+      "hasAnchor": {
+        "@id": "mlao:hasAnchor",
+        "@type": "@id"
+      },
+      "isAnchoredTo": {
+        "@id": "mlao:isAnchoredTo",
+        "@type": "@id"
+      },
+      "hasConceptualLevel": {
+        "@id": "mlao:hasConceptualLevel",
+        "@type": "@id"
+      },
+      "Collection": "prov:Collection",
+      "Entity": "prov:Entity",
+      "hadMember": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "items": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "wasGeneratedBy": {
+        "@id": "prov:wasGeneratedBy",
+        "@type": "@id"
+      },
+      "InterpretationAct": {
+        "@id": "hico:InterpretationAct",
+        "@type": "@id"
+      },
+      "hasInterpretationType": {
+        "@id": "hico:hasInterpretationType",
+        "@type": "@id"
+      },
+      "hasInterpretationCriterion": {
+        "@id": "hico:hasInterpretationCriterion",
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://w3id.org/interim/ek-raimondi-kb/pontormo/collection",
+  "type": [
+    "AnnotationCollection",
+    "Collection"
+  ],
+  "label": "Intermedial dataset: pontormo",
+  "items": [
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek6_canvas10",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/pontormo/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek6/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Pontormo, Lunetta della Villa di Poggio a Caiano, 1519-1521",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q1237596",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek6/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Il Pontormo. 1956",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek6/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "una grande lunetta, in cui, sotto veste di dei, ritrae donne, bambini e uomini del contado fiorentino, ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=244,1535,1424,67"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=244,1611,1420,68"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek6/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q1237596/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=876,302,424,311"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q1237596",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/PreiconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-25T18:38:10.800Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek6/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "dove riecheggia un suono antico",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=244,1611,1420,68"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=236,1682,1434,75"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q1237596"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek6/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "e rifiorisce la freschezza di un fregio pompeiano",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=236,1682,1434,75"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek6/anno_2/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q1237596/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=442,453,452,137"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-25T18:42:14.866Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek1_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/pontormo/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek1/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Pontormo, Affreschi del coro di San Lorenzo, 1546-1556",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek1/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Il Pontormo. 1956",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek1/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "figure impiantate e rappresentate negli affreschi del Coro di San Lorenzo",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=140,1455,1400,57"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,1529,1450,59"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek2_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/pontormo/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek2/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Pontormo, Visitazione di Carmignano, 1528",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q1109475",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek2/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Il Pontormo. 1956",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek2/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "le quattro donne nella \"Visitazione\" di Carmignano, una parvenza fanto- matica,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=156,1833,1420,61"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=146,1922,1418,44"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek2/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q1109475/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=67,117,1194,1646"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q1109475",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-25T17:54:40.236Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek2/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "una misteriosta consistenza quasi gassosa (i gas di una alambiccata combinazione chimica)",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=146,1922,1418,44"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=142,1998,793,42"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek2/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q1109475/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=702,943,541,708"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-25T17:55:19.759Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek3_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/pontormo/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek3/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown Work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek3/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Il Pontormo. 1956",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek3/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "i fogli affaticati, le carte improvvise e consunte appaiono, col mistero di vere e proprie apparizioni fanaticamente provocate, gli studi di ogni parte del corpo uma- no: e sono gambe e coscie, ventri e ombelichi, fianchi morbidi e natiche magre, e schie- ne e reni, e dorsi fino alle spalle, simile a colline tra valloncelli",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=232,469,1402,60"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=226,541,1440,66"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=226,621,1434,60"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=226,621,1434,60"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=224,693,1406,66"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek3/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": " e spalle con colli di una freschezza vegetale",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=224,693,1406,66"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=224,776,1434,56"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek3/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": " giunto ai volti, il pittore svaga e sfugge, quasi terrorizza- to di dover riconoscere e rispettare, di tutto un corpo umano, il punto della coscienza e della personalità: per cui non ferma che lo scavo, più vago e doloroso, degli occhi.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=224,776,1434,56"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=222,848,1432,58"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=232,922,1420,65"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek4_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/pontormo/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek4/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Pontormo, Studi per il Diluvio del coro di San Lorenzo, ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek4/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Il Pontormo. 1956",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek4/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "i disegni sorpavissuti degli affreschi di San Lorenzo, e fermarsi a osservare i corpi e i nudi di uomini nelle scene per il Diluvio.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=234,1608,1436,62"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=238,1687,1428,61"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek4/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "Sono grovigli disperati e un poco mo- struosi, gruppi penosi e un poco repellenti di esseri, che avendo, per una specie di maledizione, perduta ogni qualità umana, sono trasformati nei corpi di fantastici dra- ghi, serpi e ramarri. Proprio una fossa, un vivaio agghiacciante di serpenti con qual- che residuo attributo umano",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=238,1687,1428,61"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=236,1761,1418,61"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=226,1838,1444,60"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=240,1911,1434,62"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=236,1993,496,58"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek5_canvas9",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/pontormo/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek5/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Pontormo, Madonna del libro, 1540",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q3842621",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek5/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Il Pontormo. 1956",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek5/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "una Madonna di lineamenti, al solito, sfingei, che tiene nel groviglio dei ginocchi e della sottana il nudo bambino.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=140,1305,1418,57"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,1379,1416,61"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek5/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q3842621/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=332,686,1044,1048"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q3842621",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-25T18:31:12.108Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek5/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "dove il Bambino ritrova i tratti animaleschi e felini di una fantasia leonardesca",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,1379,1416,61"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,1466,1450,42"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek5/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q3842621/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=437,632,430,323"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-25T18:32:24.733Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://example.org/interim/ekph_relation",
+      "type": "IntermedialRelation",
+      "hasSourceMedium": "https://w3id.org/interim/mediumText",
+      "hasTargetMedium": "https://w3id.org/interim/mediumImage",
+      "producesObject": [
+        "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek6_canvas10",
+        "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek1_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek2_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek3_canvas8",
+        "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek4_canvas8",
+        "http://w3id.org/interim/ek-raimondi-kb/pontormo/ekphrasis/ek5_canvas9"
+      ]
+    }
+  ]
+}

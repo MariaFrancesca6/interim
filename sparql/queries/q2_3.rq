@@ -1,0 +1,13 @@
+#CQ2.3 — For each ekphrasis, what is the asserted textual referent in which the ekphrasis is contained?
+
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geko: <https://w3id.org/geko/#>
+
+SELECT DISTINCT ?ekph ?textualReferent
+WHERE {
+  ?ekph rdf:type ?t ;
+        geko:hasTextualReferent ?textualReferent .
+  ?t rdfs:subClassOf* geko:Ekphrasis .
+}
+ORDER BY ?ekph

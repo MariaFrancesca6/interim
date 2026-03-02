@@ -1,0 +1,23 @@
+#CQ1.3 — For a given intermedial relation, which media terms are asserted as source and target, and what directionality is thereby expressed?
+
+PREFIX interim: <https://w3id.org/interim/#>
+PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?relation ?sourceMedium  ?targetMedium  ?direction
+WHERE {
+  BIND(<https://w3id.org/interim/ek-raimondi-kb/ekph_relation> AS ?relation)
+
+  OPTIONAL {
+    ?relation interim:hasSourceMedium ?sourceMedium .   
+  }
+
+  OPTIONAL {
+    ?relation interim:hasTargetMedium ?targetMedium .  
+  }
+
+  BIND(CONCAT(
+    COALESCE(STR(?sourceLabel), STR(?sourceMedium)),
+    " -> ",
+    COALESCE(STR(?targetLabel), STR(?targetMedium))
+  ) AS ?direction)
+}

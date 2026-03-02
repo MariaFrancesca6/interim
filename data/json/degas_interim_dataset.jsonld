@@ -1,0 +1,1027 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    {
+      "@version": 1.1,
+      "interim": "https://w3id.org/interim/#",
+      "geko": "https://w3id.org/geko/#",
+      "mlao": "https://w3id.org/mlao/#",
+      "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+      "lrmoo": "http://iflastandards.info/ns/lrm/lrmoo/",
+      "icon": "https://w3id.org/icon/ontology/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "hico": "http://purl.org/emmedi/hico/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dcterms": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "id": {
+        "@id": "@id",
+        "@type": "@id"
+      },
+      "type": {
+        "@id": "@type",
+        "@type": "@id"
+      },
+      "IntermedialRelation": "interim:IntermedialRelation",
+      "IntermedialObject": "interim:IntermedialObject",
+      "Medium": "interim:Medium",
+      "Ekphrasis": "geko:Ekphrasis",
+      "MimeticEkphrasis": "geko:MimeticEkphrasis",
+      "NotionalEkphrasis": "geko:NotionalEkphrasis",
+      "Anchor": "mlao:Anchor",
+      "PreiconographicalSubject": "icon:PreiconographicalSubject",
+      "IconographicalSubject": "icon:IconographicalSubject",
+      "IconologicalSubject": "icon:IconologicalSubject",
+      "F1_Work": "lrmoo:F1_Work",
+      "F2_Expression": "lrmoo:F2_Expression",
+      "hasSourceMedium": {
+        "@id": "interim:hasSourceMedium",
+        "@type": "@id"
+      },
+      "hasTargetMedium": {
+        "@id": "interim:hasTargetMedium",
+        "@type": "@id"
+      },
+      "producesObject": {
+        "@id": "interim:producesObject",
+        "@type": "@id"
+      },
+      "objectProducedBy": {
+        "@id": "interim:objectProducedBy",
+        "@type": "@id"
+      },
+      "hasAuthor": {
+        "@id": "geko:hasAuthor",
+        "@type": "@id"
+      },
+      "isAuthorOf": {
+        "@id": "geko:isAuthorOf",
+        "@type": "@id"
+      },
+      "hasIconicReferent": {
+        "@id": "geko:hasIconicReferent",
+        "@type": "@id"
+      },
+      "isIconicReferentOf": {
+        "@id": "geko:isIconicReferentOf",
+        "@type": "@id"
+      },
+      "hasTextualReferent": {
+        "@id": "geko:hasTextualReferent",
+        "@type": "@id"
+      },
+      "isTextualReferentOf": {
+        "@id": "geko:isTextualReferentOf",
+        "@type": "@id"
+      },
+      "hasEkphrasticModality": {
+        "@id": "geko:hasEkphrasticModality",
+        "@type": "@id"
+      },
+      "modalitiesScheme": "geko:modalitiesScheme",
+      "denotation": "geko:denotation",
+      "dynamization": "geko:dynamization",
+      "integration": "geko:integration",
+      "mediaScheme": "interim:mediaScheme",
+      "image": "interim:mediumImage",
+      "text": "interim:mediumText",
+      "hasAnchor": {
+        "@id": "mlao:hasAnchor",
+        "@type": "@id"
+      },
+      "isAnchoredTo": {
+        "@id": "mlao:isAnchoredTo",
+        "@type": "@id"
+      },
+      "hasConceptualLevel": {
+        "@id": "mlao:hasConceptualLevel",
+        "@type": "@id"
+      },
+      "Collection": "prov:Collection",
+      "Entity": "prov:Entity",
+      "hadMember": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "items": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "wasGeneratedBy": {
+        "@id": "prov:wasGeneratedBy",
+        "@type": "@id"
+      },
+      "InterpretationAct": {
+        "@id": "hico:InterpretationAct",
+        "@type": "@id"
+      },
+      "hasInterpretationType": {
+        "@id": "hico:hasInterpretationType",
+        "@type": "@id"
+      },
+      "hasInterpretationCriterion": {
+        "@id": "hico:hasInterpretationCriterion",
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://w3id.org/interim/ek-raimondi-kb/degas/collection",
+  "type": [
+    "AnnotationCollection",
+    "Collection"
+  ],
+  "label": "Intermedial dataset: degas",
+  "items": [
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek1_canvas3",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/degas/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek1/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Edgar Degas, Degas à la palette, 1854",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": "https://www.degas-catalogue.com/fr/artworks/degas-a-la-palette-684"
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek1/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Degas da Durand-Ruel. 5.10.1960",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek1/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Sopra il divanaccio del corridoio, in una scarsa luce, è appeso l'autoritratto del '54: \"Degas à la palette\".",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p3",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=171,1715,142,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p3",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=248,1753,1361,41"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p3",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=173,1825,1412,47"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q46373"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek1/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "Il giovanotto di vent'anni, ben dotato per la pittura, vi si affaccia e dichiara con la serietà, gravità d'impegno che resteranno l'insegna della sua vita",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p3",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=173,1825,1412,47"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p3",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=170,1905,1433,39"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek1_canvas4",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/degas/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek1/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Edgar Degas, Degas à la palette, 1854",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": "https://www.degas-catalogue.com/fr/artworks/degas-a-la-palette-684"
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek1/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Degas da Durand-Ruel. 5.10.1960",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek1/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Il dipinto, intessuto in una gamma morbida di terre e di ocre, con un poco di grigio e di bianco,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p4",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=207,463,1412,58"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p4",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=201,539,1450,52"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek2_canvas4",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/degas/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek2/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Edgar Degas, Autoritratto (Louvre), 1854",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q3630723",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek2/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Degas da Durand-Ruel. 5.10.1960",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek2/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "È dello stesso anno 1854, un altro autoritratto di Degas, al Louvre,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p4",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=217,1599,1416,54"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek2/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q3630723/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=9,3,440,563"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q46373"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T14:08:43.107Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek2/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "(lo stesso modello con viso di meticcio, di \"meridionale\" appassionato) in cui traspare, quasi ancor maggiormente che nel \"Degas à la palette\", se si può dire, il pathos pesante e costipato, tra il volto, l'eleganza lo chic romantico dell'abito",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p4",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=217,1599,1416,54"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p4",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=199,1683,1444,42"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p4",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=195,1757,1428,42"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p4",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1487,1719,128,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p4",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=191,1827,1448,62"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek2/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q3630723/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=127,33,177,298"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T14:09:53.158Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek2/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "una sorta di abbandono e dimenticanza nelle mani, che stringono un pennello, o la matita,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p4",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=191,1827,1448,62"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p4",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=207,1909,925,50"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek2/anno_2/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q3630723/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=286,339,151,216"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T14:09:08.333Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek3_canvas5",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/degas/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek3/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Edgar Degas, Henri Valpinçon enfant, 1870",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": "https://www.degas-catalogue.com/fr/artworks/henri-valpincon-enfant-840"
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek3/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Degas da Durand-Ruel. 5.10.1960",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek3/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " \"Henri Valpinçon enfant.\" È un bimbo nella carrozzella, con la nutrice vicina. Sono in un prato",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=161,1147,1396,50"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=159,1221,1430,42"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=159,1221,1430,42"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek3/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Verdi  di erba,  grigi di tortora; un azzurro sbiadito. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=159,1381,68,31"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=195,1343,94,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=227,1377,1376,40"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek5_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/degas/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek5/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Edgar Degas, Danseuses vertes, 1877-79",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q18684730",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek5/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Degas da Durand-Ruel. 5.10.1960",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek5/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "le \"Danseuses vertes\"",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p7",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=161,774,1416,37"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek5/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "Le fanciulle in tutù, le figurette femminili vivono solo per quel poco di garza rosa, di nastri celestini, dentro i modellati segnati di lividi, di am- maccature. Divengono serie di farfalle rare. Fiori di carta. Il colore, fanatico, fa il resto, confonden- do la verità di passioni e di pensieri.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=161,1214,1436,60"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=161,1288,1414,58"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=159,1370,1438,50"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=147,1444,1452,56"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek6_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/degas/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek6/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Edgar Degas, Danseuses au foyer, 1889",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q64223637",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek6/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Degas da Durand-Ruel. 5.10.1960",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek6/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Danseuses au foyer",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=161,774,1416,37"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek6/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q64223637/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=357,16,789,507"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T14:30:28.834Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek7_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/degas/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek7/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Edgar Degas, Danseuse rose, 1877-1880",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": "https://www.degas-catalogue.com/fr/artworks/danseuse-en-rose-407"
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek7/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Degas da Durand-Ruel. 5.10.1960",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek7/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "nella bizzarra eleganza si- mile ad idolo indù,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=161,774,1416,37"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=163,851,627,36"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek7/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " \"Danseuse rose\"",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p7",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=163,851,627,36"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek4_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/degas/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek4/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Edgar Degas, Danseuse rattachant son chausson, 1870",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q66605826",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek4/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Degas da Durand-Ruel. 5.10.1960",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek4/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "la \"Danseuse rattachant son chaus- son\"",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=157,690,1442,54"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19318/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=161,774,1416,37"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek4/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q66605826/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=868,785,615,720"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T14:24:47.073Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://example.org/interim/ekph_relation",
+      "type": "IntermedialRelation",
+      "hasSourceMedium": "https://w3id.org/interim/mediumText",
+      "hasTargetMedium": "https://w3id.org/interim/mediumImage",
+      "producesObject": [
+        "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek1_canvas3",
+        "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek1_canvas4",
+        "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek2_canvas4",
+        "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek3_canvas5",
+        "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek5_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek6_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek7_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/degas/ekphrasis/ek4_canvas7"
+      ]
+    }
+  ]
+}

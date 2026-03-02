@@ -1,0 +1,14 @@
+# CQ3.4 — For each annotation, which conceptual anchor is asserted, and can anchors be queried independently of targets?
+
+PREFIX oa:   <http://www.w3.org/ns/oa#>
+PREFIX mlao: <https://w3id.org/mlao/#>
+
+SELECT DISTINCT ?annotation ?anchor ?anchoredTo ?conceptualLevel
+WHERE {
+  ?annotation a oa:Annotation ;
+             mlao:hasAnchor ?anchor .
+
+  OPTIONAL { ?anchor mlao:isAnchoredTo ?anchoredTo . }
+  OPTIONAL { ?anchor mlao:hasConceptualLevel ?conceptualLevel . }
+}
+ORDER BY ?annotation

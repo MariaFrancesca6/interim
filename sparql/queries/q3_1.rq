@@ -1,0 +1,10 @@
+# CQ3.1 — For a given ekphrasis, which WADM annotations constitute its analytical decomposition?
+
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT DISTINCT ?ekphrasis ?annotation
+WHERE {
+  BIND(<https://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek10_canvas8> AS ?ekphrasis)
+  ?ekphrasis prov:hadMember ?annotation .
+}
+ORDER BY ?annotation

@@ -1,0 +1,16 @@
+# CQ3.3a — Which rhetorical modality is asserted for each annotation, and can these modalities be aggregated within one ekphrasis? (distribution of modalities within an ekphrasis)
+
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX oa:   <http://www.w3.org/ns/oa#>
+PREFIX geko: <https://w3id.org/geko/#>
+
+SELECT ?modality (COUNT(DISTINCT ?annotation) AS ?nAnnotations)
+WHERE {
+  BIND(<https://w3id.org/interim/ek-raimondi-kb/giotto/ekphrasis/ek8_canvas12> AS ?ekphrasis)
+
+  ?ekphrasis prov:hadMember ?annotation .
+  ?annotation a oa:Annotation ;
+             geko:hasEkphrasticModality ?modality .
+}
+GROUP BY ?modality
+ORDER BY DESC(?nAnnotations)

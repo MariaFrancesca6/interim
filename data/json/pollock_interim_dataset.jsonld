@@ -1,0 +1,1067 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    {
+      "@version": 1.1,
+      "interim": "https://w3id.org/interim/#",
+      "geko": "https://w3id.org/geko/#",
+      "mlao": "https://w3id.org/mlao/#",
+      "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+      "lrmoo": "http://iflastandards.info/ns/lrm/lrmoo/",
+      "icon": "https://w3id.org/icon/ontology/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "hico": "http://purl.org/emmedi/hico/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dcterms": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "id": {
+        "@id": "@id",
+        "@type": "@id"
+      },
+      "type": {
+        "@id": "@type",
+        "@type": "@id"
+      },
+      "IntermedialRelation": "interim:IntermedialRelation",
+      "IntermedialObject": "interim:IntermedialObject",
+      "Medium": "interim:Medium",
+      "Ekphrasis": "geko:Ekphrasis",
+      "MimeticEkphrasis": "geko:MimeticEkphrasis",
+      "NotionalEkphrasis": "geko:NotionalEkphrasis",
+      "Anchor": "mlao:Anchor",
+      "PreiconographicalSubject": "icon:PreiconographicalSubject",
+      "IconographicalSubject": "icon:IconographicalSubject",
+      "IconologicalSubject": "icon:IconologicalSubject",
+      "F1_Work": "lrmoo:F1_Work",
+      "F2_Expression": "lrmoo:F2_Expression",
+      "hasSourceMedium": {
+        "@id": "interim:hasSourceMedium",
+        "@type": "@id"
+      },
+      "hasTargetMedium": {
+        "@id": "interim:hasTargetMedium",
+        "@type": "@id"
+      },
+      "producesObject": {
+        "@id": "interim:producesObject",
+        "@type": "@id"
+      },
+      "objectProducedBy": {
+        "@id": "interim:objectProducedBy",
+        "@type": "@id"
+      },
+      "hasAuthor": {
+        "@id": "geko:hasAuthor",
+        "@type": "@id"
+      },
+      "isAuthorOf": {
+        "@id": "geko:isAuthorOf",
+        "@type": "@id"
+      },
+      "hasIconicReferent": {
+        "@id": "geko:hasIconicReferent",
+        "@type": "@id"
+      },
+      "isIconicReferentOf": {
+        "@id": "geko:isIconicReferentOf",
+        "@type": "@id"
+      },
+      "hasTextualReferent": {
+        "@id": "geko:hasTextualReferent",
+        "@type": "@id"
+      },
+      "isTextualReferentOf": {
+        "@id": "geko:isTextualReferentOf",
+        "@type": "@id"
+      },
+      "hasEkphrasticModality": {
+        "@id": "geko:hasEkphrasticModality",
+        "@type": "@id"
+      },
+      "modalitiesScheme": "geko:modalitiesScheme",
+      "denotation": "geko:denotation",
+      "dynamization": "geko:dynamization",
+      "integration": "geko:integration",
+      "mediaScheme": "interim:mediaScheme",
+      "image": "interim:mediumImage",
+      "text": "interim:mediumText",
+      "hasAnchor": {
+        "@id": "mlao:hasAnchor",
+        "@type": "@id"
+      },
+      "isAnchoredTo": {
+        "@id": "mlao:isAnchoredTo",
+        "@type": "@id"
+      },
+      "hasConceptualLevel": {
+        "@id": "mlao:hasConceptualLevel",
+        "@type": "@id"
+      },
+      "Collection": "prov:Collection",
+      "Entity": "prov:Entity",
+      "hadMember": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "items": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "wasGeneratedBy": {
+        "@id": "prov:wasGeneratedBy",
+        "@type": "@id"
+      },
+      "InterpretationAct": {
+        "@id": "hico:InterpretationAct",
+        "@type": "@id"
+      },
+      "hasInterpretationType": {
+        "@id": "hico:hasInterpretationType",
+        "@type": "@id"
+      },
+      "hasInterpretationCriterion": {
+        "@id": "hico:hasInterpretationCriterion",
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://w3id.org/interim/ek-raimondi-kb/pollock/collection",
+  "type": [
+    "AnnotationCollection",
+    "Collection"
+  ],
+  "label": "Intermedial dataset: pollock",
+  "items": [
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek1_canvas15",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/pollock/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek1/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown Work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek1/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Jackson Pollock e la Fornarina. 12.1.962",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek1/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " L\"ovo\" della  mia fissazione, e quasi uscito dalla lunghezza di un pensiero protratto infinitamente, era,  in verità, solo la forma di un volto umano. Era una testa, e un volto, di Raffaello. Do- vevo averlo ricavato da un disegno di Raffaello, visto osservato chissà quando, e non so dove. Una delle sue teste, cosidette di madonne.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p15",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=140,790,1412,59"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p15",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=146,868,1416,58"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p15",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=140,952,1438,46"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p15",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=140,1030,887,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p15",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=924,998,130,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p15",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1027,1029,523,35"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p15",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=142,1097,1412,49"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://id.bildindex.de/thing/0001352477"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek2_canvas16",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/pollock/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek2/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown Work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek2/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Jackson Pollock e la Fornarina. 12.1.962",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek2/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Senza contare il repertorio iconografico, di fotografie del pittore negli anni del  suo lavoro. Volto, per l'età ancora giovanile, consumato dall'ansia e dall'alcool. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p16",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=220,563,1424,55"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p16",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=216,641,1442,55"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q37571"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek2/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "Un perso- naggio dell'\"angoscia moderna\", ma che riassume i tratti fisici di <???> una tragica persona da <???> <???> dramma  elisabettiano. E sono volti particolari, nella loro distruzione, dell'anima anglo-americana. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p16",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=216,641,1442,55"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p16",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=218,730,1102,39"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p16",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1249,689,73,37"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p16",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1320,730,338,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p16",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=216,816,61,30"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p16",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=216,780,112,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p16",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=277,802,1381,44"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek3_canvas17",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/pollock/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek3/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown Work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek3/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Jackson Pollock e la Fornarina. 12.1.962",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek3/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Così l'impiego, come strumenti, in  luogo dei pennelli, atavicamente concepiti come prolungamento della mano dell'artista, degli oggetti più disparati: bastoni, cenci, barattoli di latta bucati nel fondo, e da cui colava, come in una maledizione, un colore violento, con cui ricopriva, solcava, imbrattava i suoi cartoni, fogli di  compensato e tele, distesi per terra.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p17",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,940,1416,53"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p17",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,1016,1410,53"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p17",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=142,1094,1386,51"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p17",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=130,1169,1416,56"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p17",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=136,1244,1416,54"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek3/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "Divenivano pavimenti, tappeti sinistri di poesia, di urlo,  di grido, come espressione della poesia più atroce che il cuore umano d'uomo possa contenere. I colori violen- ti della passione: il giallo, il rosso, il verde, confusi al nero del catrame, dell'asfalto.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p17",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=136,1244,1416,54"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p17",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,1322,1020,51"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p17",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1033,1296,133,35"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p17",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1158,1323,410,48"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p17",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=132,1397,1444,56"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4_canvas19",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/pollock/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Raffaello Sanzio, La Fornarina, 1518",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q153441",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Jackson Pollock e la Fornarina. 12.1.962",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Era la Fornarina di Raffaello.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,492,1410,55"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://gn.biblhertz.it/iiif/3/bhim00050833/Canvas/PD109112N1l45/1_1",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=5714,8051,1438,891"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q153441",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-17T23:45:12.765Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": " Non era più un quadro. Non era una perfetta e straordinaria opera di pittura. Era una presenza umana, e insieme un miracolo di poesia pittorica.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,492,1410,55"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=136,570,1426,56"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=134,644,1414,56"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "La repentina felicità, e lietezza, mi fecero sentire quasi come un rossore,  che dal viso mi passava nell'animo.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=134,644,1414,56"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=146,721,1410,53"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_3",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "la fanciulla sedeva",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=148,800,1398,56"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_3/target/image",
+              "type": "SpecificResource",
+              "source": "https://gn.biblhertz.it/iiif/3/bhim00050833/Canvas/PD109112N1l45/1_1",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=447,1320,8077,11028"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "https://iconclass.org/31AA235",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/PreiconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-17T23:37:50.828Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_4",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_4",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "quieta, silenziosa, e attenta",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=148,800,1398,56"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_5",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_5",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "scranno",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=148,800,1398,56"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q2110302"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_6",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_6",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "reggendo con una mano i lievi veli che ne coprono, non più concreti di un fiato, di un soffio d'aria estiva,  il busto ignudo La seconda mano: le lunghe dita disciolte, posava su d'una gamba, dove questa si stacca dal tronco.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=148,800,1398,56"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=142,874,1418,58"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=146,948,1412,55"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=146,948,1412,55"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=146,1026,1412,56"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_6/target/image",
+              "type": "SpecificResource",
+              "source": "https://gn.biblhertz.it/iiif/3/bhim00050833/Canvas/PD109112N1l45/1_1",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=3456,6881,1942,2147"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/PreiconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-17T23:47:41.854Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_7",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_7",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "Tutto il suo corpo riluceva in quell'incanto di carnalità amorosa.",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=146,1026,1412,56"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_8",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_8",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "Poichè il pensiero, e quasi la coscienza di un senso d'amore e di passione amorosa, sono soffusi in ogni parte, e riscaldano di un ca- lore continuo, temperato,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=146,1026,1412,56"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=144,1102,1424,54"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=142,1175,1398,59"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_9",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_9",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "quel lembo di ventre che il velo, invece di nascondere, rende più vivo e respirante.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=142,1175,1398,59"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=140,1266,1414,40"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_9/target/image",
+              "type": "SpecificResource",
+              "source": "https://gn.biblhertz.it/iiif/3/bhim00050833/Canvas/PD109112N1l45/1_1",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=2266,9077,2395,1294"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-17T23:52:00.974Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_10",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4/anno_10",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "una melodiosa figura di grazia e di poesia",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19266/canvas/p19",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=146,1496,729,35"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_11",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://example.org/interim/ekph_relation",
+      "type": "IntermedialRelation",
+      "hasSourceMedium": "https://w3id.org/interim/mediumText",
+      "hasTargetMedium": "https://w3id.org/interim/mediumImage",
+      "producesObject": [
+        "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek1_canvas15",
+        "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek2_canvas16",
+        "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek3_canvas17",
+        "http://w3id.org/interim/ek-raimondi-kb/pollock/ekphrasis/ek4_canvas19"
+      ]
+    }
+  ]
+}

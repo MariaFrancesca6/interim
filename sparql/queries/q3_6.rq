@@ -1,0 +1,31 @@
+# CQ3.6 — Navigation from a canvas to all associated annotations, their modalities, anchors, and provenance
+
+PREFIX oa:    <http://www.w3.org/ns/oa#>
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prov:  <http://www.w3.org/ns/prov#>
+PREFIX dct:   <http://purl.org/dc/terms/>
+PREFIX hico:  <http://purl.org/emmedi/hico/>
+PREFIX mlao:  <https://w3id.org/mlao/#>
+PREFIX geko:  <https://w3id.org/geko/#>
+
+SELECT DISTINCT ?annotation ?modality ?anchor ?anchoredTo ?act ?agent ?criterion ?selectorValue
+WHERE {
+  BIND(<https://dl.ficlit.unibo.it/iiif/2/19386/canvas/p7> AS ?canvas)
+
+  ?annotation a oa:Annotation ;
+             oa:hasTarget ?t ;
+             geko:hasEkphrasticModality ?modality ;
+             prov:wasGeneratedBy ?act ;
+             dct:creator ?agent ;
+             mlao:hasAnchor ?anchor .
+
+  ?t oa:hasSource ?canvas .
+  OPTIONAL {
+    ?t oa:hasSelector ?sel .
+    ?sel rdf:value ?selectorValue .
+  }
+
+  OPTIONAL { ?anchor mlao:isAnchoredTo ?anchoredTo . }
+  OPTIONAL { ?act hico:hasInterpretationCriterion ?criterion . }
+}
+ORDER BY ?annotation ?criterion

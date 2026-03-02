@@ -1,0 +1,10 @@
+#CQ1.4 — Which intermedial objects are produced by each relation?
+
+PREFIX interim: <https://w3id.org/interim/#>
+
+SELECT DISTINCT ?relation ?intermedialObject
+WHERE {
+  ?relation a interim:IntermedialRelation ;
+            interim:producesObject ?intermedialObject .
+}
+ORDER BY ?relation ?intermedialObject

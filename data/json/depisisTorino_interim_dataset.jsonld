@@ -1,0 +1,1379 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    {
+      "@version": 1.1,
+      "interim": "https://w3id.org/interim/#",
+      "geko": "https://w3id.org/geko/#",
+      "mlao": "https://w3id.org/mlao/#",
+      "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+      "lrmoo": "http://iflastandards.info/ns/lrm/lrmoo/",
+      "icon": "https://w3id.org/icon/ontology/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "hico": "http://purl.org/emmedi/hico/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dcterms": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "id": {
+        "@id": "@id",
+        "@type": "@id"
+      },
+      "type": {
+        "@id": "@type",
+        "@type": "@id"
+      },
+      "IntermedialRelation": "interim:IntermedialRelation",
+      "IntermedialObject": "interim:IntermedialObject",
+      "Medium": "interim:Medium",
+      "Ekphrasis": "geko:Ekphrasis",
+      "MimeticEkphrasis": "geko:MimeticEkphrasis",
+      "NotionalEkphrasis": "geko:NotionalEkphrasis",
+      "Anchor": "mlao:Anchor",
+      "PreiconographicalSubject": "icon:PreiconographicalSubject",
+      "IconographicalSubject": "icon:IconographicalSubject",
+      "IconologicalSubject": "icon:IconologicalSubject",
+      "F1_Work": "lrmoo:F1_Work",
+      "F2_Expression": "lrmoo:F2_Expression",
+      "hasSourceMedium": {
+        "@id": "interim:hasSourceMedium",
+        "@type": "@id"
+      },
+      "hasTargetMedium": {
+        "@id": "interim:hasTargetMedium",
+        "@type": "@id"
+      },
+      "producesObject": {
+        "@id": "interim:producesObject",
+        "@type": "@id"
+      },
+      "objectProducedBy": {
+        "@id": "interim:objectProducedBy",
+        "@type": "@id"
+      },
+      "hasAuthor": {
+        "@id": "geko:hasAuthor",
+        "@type": "@id"
+      },
+      "isAuthorOf": {
+        "@id": "geko:isAuthorOf",
+        "@type": "@id"
+      },
+      "hasIconicReferent": {
+        "@id": "geko:hasIconicReferent",
+        "@type": "@id"
+      },
+      "isIconicReferentOf": {
+        "@id": "geko:isIconicReferentOf",
+        "@type": "@id"
+      },
+      "hasTextualReferent": {
+        "@id": "geko:hasTextualReferent",
+        "@type": "@id"
+      },
+      "isTextualReferentOf": {
+        "@id": "geko:isTextualReferentOf",
+        "@type": "@id"
+      },
+      "hasEkphrasticModality": {
+        "@id": "geko:hasEkphrasticModality",
+        "@type": "@id"
+      },
+      "modalitiesScheme": "geko:modalitiesScheme",
+      "denotation": "geko:denotation",
+      "dynamization": "geko:dynamization",
+      "integration": "geko:integration",
+      "mediaScheme": "interim:mediaScheme",
+      "image": "interim:mediumImage",
+      "text": "interim:mediumText",
+      "hasAnchor": {
+        "@id": "mlao:hasAnchor",
+        "@type": "@id"
+      },
+      "isAnchoredTo": {
+        "@id": "mlao:isAnchoredTo",
+        "@type": "@id"
+      },
+      "hasConceptualLevel": {
+        "@id": "mlao:hasConceptualLevel",
+        "@type": "@id"
+      },
+      "Collection": "prov:Collection",
+      "Entity": "prov:Entity",
+      "hadMember": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "items": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "wasGeneratedBy": {
+        "@id": "prov:wasGeneratedBy",
+        "@type": "@id"
+      },
+      "InterpretationAct": {
+        "@id": "hico:InterpretationAct",
+        "@type": "@id"
+      },
+      "hasInterpretationType": {
+        "@id": "hico:hasInterpretationType",
+        "@type": "@id"
+      },
+      "hasInterpretationCriterion": {
+        "@id": "hico:hasInterpretationCriterion",
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://w3id.org/interim/ek-raimondi-kb/depisisTorino/collection",
+  "type": [
+    "AnnotationCollection",
+    "Collection"
+  ],
+  "label": "Intermedial dataset: depisisTorino",
+  "items": [
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek1_canvas6",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisTorino/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek1/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Filippo De Pisis, Natura Morta (Anfuso), 1920",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek1/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Presentazione mostra di De Pisis a Torino. Maggio 1966",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek1/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "la “Natura morta”, datata 1920, nella quale sono ripresi, in pittura, gli oggetti del papier- collé <Anfuso?>, e che rappresentano il tema di una favola francese, di <un'apparizione?> poetica, l’uccellino di coccio colorato la fetta di cocomero",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=248,939,1394,47"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=238,1018,179,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=416,973,20,31"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=417,1019,584,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=932,984,80,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1001,1022,621,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1001,1022,621,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=238,1093,1361,42"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=238,1093,1361,42"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek1/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "la pera",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=238,1093,1361,42"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek1/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "il limone e gli altri poveri oggetti di un banco banco di fiera campestre.  ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=238,1093,1361,42"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1542,1063,82,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1599,1094,29,37"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=246,1166,244,42"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek3_canvas6",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisTorino/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek3/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Filippo De Pisis, L'uomo con il tubino, 1920",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek3/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Presentazione mostra di De Pisis a Torino. Maggio 1966",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek3/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " “L’uomo con tubino”, del ‘19, in collezione bolognese",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=476,1350,826,42"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek2_canvas6",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisTorino/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek2/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Filippo De Pisis, Natura morta con conchiglia, 1918",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek2/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Presentazione mostra di De Pisis a Torino. Maggio 1966",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek2/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "la “Natura morta con la con-   chiglia\", datata 918,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=242,1318,1356,41"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=246,1395,955,37"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek4_canvas6",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisTorino/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek4/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Filippo De Pisis, Paesaggio di Tivoli (Signorelli), ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek4/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Presentazione mostra di De Pisis a Torino. Maggio 1966",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek4/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "“Paesaggio di Tivoli” Signorelli, ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=250,1469,1378,43"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=240,1543,1378,45"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek5_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisTorino/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek5/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown Work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek5/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Presentazione mostra di De Pisis a Torino. Maggio 1966",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek5/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Sono le nature morte marine",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=138,1310,731,40"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek5/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "sugli  orizzonti di cielo e di acqua stagnante, ricompaiono, cari cari  fantasmi, le case, le  fattorie rosse, i pali e le reti delle valli sotto il Po  i modelli di primo piano: le conchiglie, le aragoste,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=327,1351,85,35"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=392,1386,841,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1172,1351,59,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1233,1386,307,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=150,1464,976,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=150,1464,976,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=996,1426,200,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1126,1466,412,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1126,1466,412,33"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek5/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "cespi fioriti",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=144,1506,76,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=210,1538,1322,36"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek5/anno_3",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "dicono di come egli abbia subito amato l’arte francese, che si vedeva intorno.",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=210,1538,1322,36"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_4",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek6_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisTorino/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek6/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Filippo De Pisis, Due Lucci appesi, 1927",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek6/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Presentazione mostra di De Pisis a Torino. Maggio 1966",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek6/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "Come in un emblema di nostalgia poetica,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=210,1538,1322,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,1610,844,40"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek6/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "pendono i due lucci,  lucci contro un muro di <???>, casa",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,1610,844,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=909,1573,89,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=982,1610,333,41"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1246,1575,66,34"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek6/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "parlanti con  la voce quasi di una poesia di Saba",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1315,1612,197,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=140,1686,1392,46"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek6/anno_3",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " cioè i “Due pesci appesi” del ‘27. ",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=140,1686,1392,46"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_4",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek7_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisTorino/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek7/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown Work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek7/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Presentazione mostra di De Pisis a Torino. Maggio 1966",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek7/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Vengono i paesaggi di Cortina e di Cadore: le stradine, le case, gli alberi, i boschi, (e qui, ne vediamo vediamo uno straordinario, del ‘25), ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=148,1914,493,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=590,1878,126,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=641,1917,888,37"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1393,1889,125,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1529,1924,3,30"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,1989,767,41"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek8_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisTorino/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek8/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Filippo De Pisis, Passage de l'Odéon, 1931-1933",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": "https://fototeca.fondazioneragghianti.it/scheda/OA/57326/De%20Pisis,%20Filippo%20,%20Passage%20de%20l'Od%C3%A9on"
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek8/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Presentazione mostra di De Pisis a Torino. Maggio 1966",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek8/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "il \"Pasage de l’Odeon\",",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p8",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=870,351,588,53"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek9_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisTorino/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek9/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Filippo De Pisis, Place de la Concorde, ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek9/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Presentazione mostra di De Pisis a Torino. Maggio 1966",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek9/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "due \"Place de la Concorde\",",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p8",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=238,787,388,35"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek10_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisTorino/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek10/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Filippo De Pisis, Ritratto della Ragina, ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek10/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Presentazione mostra di De Pisis a Torino. Maggio 1966",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek10/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " il “Ritratto della Regina”",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p8",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=240,862,1396,36"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek10/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " è il ritratto di un grande pesce circondato di fiori e di frutta, sullo sfondo di della campagna di  Pomposa.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=240,862,1396,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=246,938,892,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1020,894,264,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1138,938,470,36"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek11_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisTorino/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek11/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Filippo De Pisis, Grandi fiori di casa Massimo, ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek11/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Presentazione mostra di De Pisis a Torino. Maggio 1966",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek11/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "“Grandi fiori a Casa Massimo”.",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19335/canvas/p8",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=244,1005,1392,49"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://example.org/interim/ekph_relation",
+      "type": "IntermedialRelation",
+      "hasSourceMedium": "https://w3id.org/interim/mediumText",
+      "hasTargetMedium": "https://w3id.org/interim/mediumImage",
+      "producesObject": [
+        "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek1_canvas6",
+        "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek3_canvas6",
+        "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek2_canvas6",
+        "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek4_canvas6",
+        "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek5_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek6_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek7_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek8_canvas8",
+        "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek9_canvas8",
+        "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek10_canvas8",
+        "http://w3id.org/interim/ek-raimondi-kb/depisisTorino/ekphrasis/ek11_canvas8"
+      ]
+    }
+  ]
+}

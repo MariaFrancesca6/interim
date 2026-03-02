@@ -1,0 +1,17 @@
+#CQ1.2 — How are intermedial relations classified according to relation types?
+
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX interim: <https://w3id.org/interim/#>
+PREFIX miro:   <https://w3id.org/miro/>
+PREFIX geko:   <https://w3id.org/geko/#>
+
+SELECT (miro:IntermedialReference AS ?derivedType)
+       (COUNT(DISTINCT ?rel) AS ?nRelations)
+WHERE {
+  ?rel rdf:type interim:IntermedialRelation ;
+       interim:producesObject ?ekph ;
+       interim:hasSourceMedium <https://w3id.org/interim/mediumText> ;
+       interim:hasTargetMedium <https://w3id.org/interim/mediumImage> .
+  ?ekph rdf:type geko:Ekphrasis .
+}
+GROUP BY ?derivedType

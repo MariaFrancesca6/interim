@@ -1,0 +1,891 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    {
+      "@version": 1.1,
+      "interim": "https://w3id.org/interim/#",
+      "geko": "https://w3id.org/geko/#",
+      "mlao": "https://w3id.org/mlao/#",
+      "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+      "lrmoo": "http://iflastandards.info/ns/lrm/lrmoo/",
+      "icon": "https://w3id.org/icon/ontology/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "hico": "http://purl.org/emmedi/hico/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dcterms": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "id": {
+        "@id": "@id",
+        "@type": "@id"
+      },
+      "type": {
+        "@id": "@type",
+        "@type": "@id"
+      },
+      "IntermedialRelation": "interim:IntermedialRelation",
+      "IntermedialObject": "interim:IntermedialObject",
+      "Medium": "interim:Medium",
+      "Ekphrasis": "geko:Ekphrasis",
+      "MimeticEkphrasis": "geko:MimeticEkphrasis",
+      "NotionalEkphrasis": "geko:NotionalEkphrasis",
+      "Anchor": "mlao:Anchor",
+      "PreiconographicalSubject": "icon:PreiconographicalSubject",
+      "IconographicalSubject": "icon:IconographicalSubject",
+      "IconologicalSubject": "icon:IconologicalSubject",
+      "F1_Work": "lrmoo:F1_Work",
+      "F2_Expression": "lrmoo:F2_Expression",
+      "hasSourceMedium": {
+        "@id": "interim:hasSourceMedium",
+        "@type": "@id"
+      },
+      "hasTargetMedium": {
+        "@id": "interim:hasTargetMedium",
+        "@type": "@id"
+      },
+      "producesObject": {
+        "@id": "interim:producesObject",
+        "@type": "@id"
+      },
+      "objectProducedBy": {
+        "@id": "interim:objectProducedBy",
+        "@type": "@id"
+      },
+      "hasAuthor": {
+        "@id": "geko:hasAuthor",
+        "@type": "@id"
+      },
+      "isAuthorOf": {
+        "@id": "geko:isAuthorOf",
+        "@type": "@id"
+      },
+      "hasIconicReferent": {
+        "@id": "geko:hasIconicReferent",
+        "@type": "@id"
+      },
+      "isIconicReferentOf": {
+        "@id": "geko:isIconicReferentOf",
+        "@type": "@id"
+      },
+      "hasTextualReferent": {
+        "@id": "geko:hasTextualReferent",
+        "@type": "@id"
+      },
+      "isTextualReferentOf": {
+        "@id": "geko:isTextualReferentOf",
+        "@type": "@id"
+      },
+      "hasEkphrasticModality": {
+        "@id": "geko:hasEkphrasticModality",
+        "@type": "@id"
+      },
+      "modalitiesScheme": "geko:modalitiesScheme",
+      "denotation": "geko:denotation",
+      "dynamization": "geko:dynamization",
+      "integration": "geko:integration",
+      "mediaScheme": "interim:mediaScheme",
+      "image": "interim:mediumImage",
+      "text": "interim:mediumText",
+      "hasAnchor": {
+        "@id": "mlao:hasAnchor",
+        "@type": "@id"
+      },
+      "isAnchoredTo": {
+        "@id": "mlao:isAnchoredTo",
+        "@type": "@id"
+      },
+      "hasConceptualLevel": {
+        "@id": "mlao:hasConceptualLevel",
+        "@type": "@id"
+      },
+      "Collection": "prov:Collection",
+      "Entity": "prov:Entity",
+      "hadMember": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "items": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "wasGeneratedBy": {
+        "@id": "prov:wasGeneratedBy",
+        "@type": "@id"
+      },
+      "InterpretationAct": {
+        "@id": "hico:InterpretationAct",
+        "@type": "@id"
+      },
+      "hasInterpretationType": {
+        "@id": "hico:hasInterpretationType",
+        "@type": "@id"
+      },
+      "hasInterpretationCriterion": {
+        "@id": "hico:hasInterpretationCriterion",
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://w3id.org/interim/ek-raimondi-kb/depisisLibri/collection",
+  "type": [
+    "AnnotationCollection",
+    "Collection"
+  ],
+  "label": "Intermedial dataset: depisisLibri",
+  "items": [
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek2_canvas10",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisLibri/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek2/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown Work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek2/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, De Pisis : nuovi appunti. (Dicembre 1957)",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek2/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Per questo \"Verlaine\", egli concepì alcuni disegni tinti di colore all'acquerello",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=621,762,1003,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=214,836,1432,42"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek2/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Figure di giovani nudi, di <???>; donne fiori, verdure, frutti, farfalle, lembi di nuvole, alberi.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=210,1144,1410,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=208,1224,128,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=210,1192,90,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=336,1216,1282,40"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek2/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "Macchiette umane, simili a coleotteri, a formiche Maschere di Watteau, spolpate, ridotte a larva larva di puro colore; e tutto fuso, impastato dentro una luce fatta di miele impalpabile, con, in cielo, quei bioccoli di turchino, fiocchi di panna, e frantumi di nero: come le briciole di fulig- gine cadute dalla cappa del camino sulla minestra.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=336,1216,1282,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=200,1294,1324,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=200,1294,1324,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1472,1256,104,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1524,1296,112,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=214,1370,1426,42"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=200,1444,1454,44"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=214,1524,385,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=532,1484,178,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=599,1522,1055,36"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek3_canvas11",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisLibri/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek3/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown Work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek3/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, De Pisis : nuovi appunti. (Dicembre 1957)",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek3/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "e. Sono tre conchiglie, su di un piano verdino, sotto la soffitta di un cielo a toppe nerastre e ce- lesti. Virgole nere di <???> inchiostro ronzano là in mezzo",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=762,612,848,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=142,690,1458,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=144,767,481,37"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=500,728,170,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=625,764,987,42"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek3/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "nessuna riunione di  conchiglie è mai stata più felice e dolorosa di questa: involucri fantastici, spoglie durature e bellissime di piccoli esseri che non contano",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=623,839,987,39"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=152,914,1438,44"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1326,874,206,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=150,992,1430,38"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek3/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Un'acqua: l'acqua che stempera il colore, è calata in ogni parte, dilavando le forme, lasciando <???> macchie sulla carta, ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=150,992,1430,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=156,1070,854,42"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=864,1030,156,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1010,1072,568,33"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek3/anno_3",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "come quando una lacri- ma vi è <???> caduta",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1010,1072,568,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=156,1152,398,33"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_4",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek4_canvas11",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisLibri/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek4/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown Work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek4/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, De Pisis : nuovi appunti. (Dicembre 1957)",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek4/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " Nuvole e cieli sono, irrealisticamente, zone di un colore giallo, o  rosa, o verde.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=150,1749,1434,44"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p11",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=152,1830,242,41"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek1_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/depisisLibri/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek1/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek1/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, De Pisis : nuovi appunti. (Dicembre 1957)",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek1/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "sono disegni, tracciati con inchiostro, come i precedenti, e con l'impiego della soli- ta cannuccia di legno il teatro dei burattini,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=283,1142,1373,41"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=208,1212,1398,51"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=208,1212,1398,51"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek1/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "l'orto dei frati",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p8",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=216,1286,1394,49"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek1/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "una figurina sulla spiaggia di mare",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p8",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=216,1286,1394,49"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek1/anno_3",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " l'interno di una stanza",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p8",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=216,1286,1394,49"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_4",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek1/anno_4",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "un'efebo ignudo con alcune conchiglie",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19356/canvas/p8",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=220,1362,1384,49"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_5",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://example.org/interim/ekph_relation",
+      "type": "IntermedialRelation",
+      "hasSourceMedium": "https://w3id.org/interim/mediumText",
+      "hasTargetMedium": "https://w3id.org/interim/mediumImage",
+      "producesObject": [
+        "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek2_canvas10",
+        "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek3_canvas11",
+        "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek4_canvas11",
+        "http://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek1_canvas8"
+      ]
+    }
+  ]
+}

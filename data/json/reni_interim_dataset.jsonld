@@ -1,0 +1,2030 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    {
+      "@version": 1.1,
+      "interim": "https://w3id.org/interim/#",
+      "geko": "https://w3id.org/geko/#",
+      "mlao": "https://w3id.org/mlao/#",
+      "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+      "lrmoo": "http://iflastandards.info/ns/lrm/lrmoo/",
+      "icon": "https://w3id.org/icon/ontology/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "hico": "http://purl.org/emmedi/hico/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dcterms": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "id": {
+        "@id": "@id",
+        "@type": "@id"
+      },
+      "type": {
+        "@id": "@type",
+        "@type": "@id"
+      },
+      "IntermedialRelation": "interim:IntermedialRelation",
+      "IntermedialObject": "interim:IntermedialObject",
+      "Medium": "interim:Medium",
+      "Ekphrasis": "geko:Ekphrasis",
+      "MimeticEkphrasis": "geko:MimeticEkphrasis",
+      "NotionalEkphrasis": "geko:NotionalEkphrasis",
+      "Anchor": "mlao:Anchor",
+      "PreiconographicalSubject": "icon:PreiconographicalSubject",
+      "IconographicalSubject": "icon:IconographicalSubject",
+      "IconologicalSubject": "icon:IconologicalSubject",
+      "F1_Work": "lrmoo:F1_Work",
+      "F2_Expression": "lrmoo:F2_Expression",
+      "hasSourceMedium": {
+        "@id": "interim:hasSourceMedium",
+        "@type": "@id"
+      },
+      "hasTargetMedium": {
+        "@id": "interim:hasTargetMedium",
+        "@type": "@id"
+      },
+      "producesObject": {
+        "@id": "interim:producesObject",
+        "@type": "@id"
+      },
+      "objectProducedBy": {
+        "@id": "interim:objectProducedBy",
+        "@type": "@id"
+      },
+      "hasAuthor": {
+        "@id": "geko:hasAuthor",
+        "@type": "@id"
+      },
+      "isAuthorOf": {
+        "@id": "geko:isAuthorOf",
+        "@type": "@id"
+      },
+      "hasIconicReferent": {
+        "@id": "geko:hasIconicReferent",
+        "@type": "@id"
+      },
+      "isIconicReferentOf": {
+        "@id": "geko:isIconicReferentOf",
+        "@type": "@id"
+      },
+      "hasTextualReferent": {
+        "@id": "geko:hasTextualReferent",
+        "@type": "@id"
+      },
+      "isTextualReferentOf": {
+        "@id": "geko:isTextualReferentOf",
+        "@type": "@id"
+      },
+      "hasEkphrasticModality": {
+        "@id": "geko:hasEkphrasticModality",
+        "@type": "@id"
+      },
+      "modalitiesScheme": "geko:modalitiesScheme",
+      "denotation": "geko:denotation",
+      "dynamization": "geko:dynamization",
+      "integration": "geko:integration",
+      "mediaScheme": "interim:mediaScheme",
+      "image": "interim:mediumImage",
+      "text": "interim:mediumText",
+      "hasAnchor": {
+        "@id": "mlao:hasAnchor",
+        "@type": "@id"
+      },
+      "isAnchoredTo": {
+        "@id": "mlao:isAnchoredTo",
+        "@type": "@id"
+      },
+      "hasConceptualLevel": {
+        "@id": "mlao:hasConceptualLevel",
+        "@type": "@id"
+      },
+      "Collection": "prov:Collection",
+      "Entity": "prov:Entity",
+      "hadMember": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "items": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "wasGeneratedBy": {
+        "@id": "prov:wasGeneratedBy",
+        "@type": "@id"
+      },
+      "InterpretationAct": {
+        "@id": "hico:InterpretationAct",
+        "@type": "@id"
+      },
+      "hasInterpretationType": {
+        "@id": "hico:hasInterpretationType",
+        "@type": "@id"
+      },
+      "hasInterpretationCriterion": {
+        "@id": "hico:hasInterpretationCriterion",
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+  "type": [
+    "AnnotationCollection",
+    "Collection"
+  ],
+  "label": "Intermedial dataset: reni",
+  "items": [
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek4_canvas10",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek4/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Guido Reni, David con la testa di Golia, 1620-1630",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q79405816",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek4/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek4/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "garzonetto inchinato",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=182,514,1452,64"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek4/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q20268270/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=943,1285,1115,1634"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:18:58.404Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek5_canvas10",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek5/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Guido Reni, Salomè, 1639-1640",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q20268270",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek5/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek5/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "queste Salomè che muovono il primo passo della danza",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=182,514,1452,64"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek5/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q20268270/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=243,1434,673,1463"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q20268270"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:21:30.082Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek7_canvas10",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek7/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Guido Reni, Maddalena, 1620",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q110812295",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek7/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek7/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "queste Maddalene in biondo e viola ciclamino",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=184,664,1434,68"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek7/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q110812295/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=208,212,1194,1443"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:29:46.738Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek6_canvas10",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek6/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Guido Reni, Lucrezia, 1639",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q23948997",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek6/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek6/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "queste Lucre- zie col petto fuori, attente a non guastare l’armonia di pieghe del manto rifluente sul divano di casa",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=182,514,1452,64"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=184,588,1432,66"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p10",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=184,664,1434,68"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek6/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q23948997/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=602,320,1315,2401"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:25:30.542Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek8_canvas21",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek8/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Guido Reni, Sansone Vittorioso, 1614-1616",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek8/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek8/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Il corpo del Sansone ignudo, casto, pulito, levigato, nelle sue curve armoniose, ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=445,800,1151,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=180,872,1412,43"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek8/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "come un violoncello messo in piedi.",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=180,872,1412,43"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek8/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "Pare aspettare che una mano, toccandolo, ne cavi dei suoni.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=180,872,1412,43"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=178,950,1436,38"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek10_canvas21",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek10/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Guido Reni, Amor Sacro e Amor Profano, ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek10/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek10/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "O il modello, inginocchiato a terra, dell'Amor Profano nel quadro di Pisa. ",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=405,1102,1217,50"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek9_canvas21",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek9/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Guido Reni, Ippomene e Atalanta, 1618",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q16327457",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek9/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek9/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "O quello d'Ippomene nella corsa con Atalanta: un oggetto d'a- vorio tiepido, riscaldato col fiato, con quel lembo  di mantello violetto, spuntato, come foglia, nell'orto, sotto le gambe liscie del giovane elfo. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=178,950,1436,38"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=186,1026,790,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=976,993,27,31"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=976,1028,626,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1426,988,160,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=178,1106,227,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=182,1062,382,36"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek9/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q16327457/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=43,16,1789,1320"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:37:53.269Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek11_canvas21",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek11/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Guido Reni, Apollo e Marsia, 1620",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q17582528",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek11/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek11/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "due versioni dell'Apollo che scortica il pastore Marsia. A- pollo è un giovane spogliato, al solito, nel cui corpo particolari anatomici come le anche o il ventre, il groppone, le spalle, sono di una verità leggermente pesante.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=273,1406,1351,40"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=182,1482,1428,41"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=182,1556,1444,40"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek11/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q17582528/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=39,85,577,691"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:43:08.003Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek11/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "Una carnalità perfino essu- dativa e sudaticcia. Il giovanotto ha lasciato il letto disfatto, per mettersi all'opera di scuoiatore. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=182,1556,1444,40"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=170,1632,123,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=216,1597,178,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=293,1632,1325,39"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek11/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q17582528/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=93,175,236,589"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:43:41.055Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek11/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "E la sua <???> imperturbabile dolcezza, alquanto ci fa specie. Altro che mitologia! Lo riconosciamo: non è che <???> Giulio, o Giuseppino, il bel garzone del macellaio di via della Mascarella. Il preferito dei modelli",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=293,1632,1325,39"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=724,1594,890,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=166,1706,1450,49"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=178,1792,101,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=258,1742,92,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=279,1774,1291,50"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p21",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1348,1808,106,34"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek11/anno_2/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q17582528/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=154,108,205,160"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:45:45.545Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek12_canvas24",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek12/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Guido Reni, San Giovanni Battista (Londra), 1640",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q23929171",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek12/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek12/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " il Battista di Londra, il cui capo giovanile di ca- pelli si confonde con le fronde degli alberi. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=206,1096,1440,38"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=216,1171,1274,38"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek12/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q23929171/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=395,668,2824,4213"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:48:31.539Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek12/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "Capelli e fronde, simbolo della natura operante e riposata. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=216,1171,1274,38"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1346,1134,152,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1490,1174,160,32"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek12/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q23929171/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1367,133,2049,1722"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconologicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:50:02.717Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek13_canvas24",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek13/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Guido Reni, San Giovanni Battista (Torino), ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek13/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek13/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "O come il Battista di Torino,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1490,1174,160,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=216,1239,1436,49"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek13/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "pieno di una esuberante vita amorosa contenuta. ",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=216,1239,1436,49"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek14_canvas24",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek14/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Guido Reni, Cleopatra (Pitti), 1630",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q32904843",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek14/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek14/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "corpo della Cleopatra di Pitti",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=196,1315,1458,53"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek14/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q32904843/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=62,156,771,960"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:52:52.622Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek14/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "Il femminile spasimo di questa persona, superato il disor- dine della passione dolorosa, è giunto al punto in cui potrebbe esprimersi in canto.  La sua armoniosa nudità, così casta e tuttavia consapevole del sesso, parla eloquente dall'am- pia curva delle spalle di carne, serena di potenza dentro <???> una stanza consueta",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=196,1315,1458,53"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=206,1391,1454,51"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=206,1391,1454,51"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=204,1477,1446,37"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=222,1552,1193,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1308,1510,116,34"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek14/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q32904843/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=182,133,351,322"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:53:20.583Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek14/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "tra i drappi delle tende e il tepore dei cuscini, allietata, prima di morte, dalla freschezza dei fichi verdi raccolti nel cestello.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1415,1554,191,34"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=208,1618,1448,50"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p24",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=212,1693,1432,50"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek14/anno_2/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q32904843/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=4,119,210,797"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:54:48.194Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek1_canvas3",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek1/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Cimabue, Maestà di Santa Maria dei Servi, 1280",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q3276414",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek1/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek1/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Madonna in trono con il Bambino, di Cimabue. Il Bambino è ritto in piedi sulle ginocchia",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p3",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=166,2024,1410,55"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek1/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q3276414/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=634,875,165,193"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q3276414",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T15:31:43.397Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek1_canvas4",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek1/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Cimabue, Maestà di Santa Maria dei Servi, 1280",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q3276414",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek1/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek1/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "della Madre.",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p4",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=186,503,1462,78"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek1/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "Stanno al buio, o almeno nell’ombra, e mai hanno visto la luce della luna bolo- gnese. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p4",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=186,503,1462,78"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p4",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=192,583,1422,79"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek1/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q3276414/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=403,313,362,359"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T15:33:35.708Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek2_canvas9",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek2/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Guido Reni, Ratto di Elena, 1631",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q18572427",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek2/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek2/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Il Ratto di Elena accade, tra gentiluomini e dame sorridenti, in una spiaggia di mare, <col> rallegrato dal servo moretto che tira la scimmia e il cagnolo della padrona. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=188,1576,1412,48"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=190,1652,54,35"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=178,1614,336,35"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=244,1654,1376,46"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q18572427"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek2/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "Quasi una pacifica, monda- na partenza, anzi un ritorno dai bagni al primo fresco di settembre. O come nel finale di una gioiosa, feerica commedia che s’intitoli  per esempio Pene d’amor perduto. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=244,1654,1376,46"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=190,1732,1410,44"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=176,1806,800,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=738,1768,226,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=976,1809,642,45"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek3_canvas9",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek3/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Guido Reni, Il Ratto d'Europa, 1637",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q7759428",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek3/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek3/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "E la florida, ap- passionata, innamorata Europa, seduta sul bove <incorollato?> come in un carro agreste, dove è diretta? Essa attraversa un mare grigio",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=976,1809,642,45"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=176,1885,1430,39"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=178,1958,875,39"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek3/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q7759428/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=289,309,527,824"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q7759428",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:00:14.114Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek3/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "che ci <???> <???> somiglia il passo di Calais.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=178,1958,875,39"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=976,1918,266,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1053,1962,297,34"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek3/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q7759428/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=10,1289,574,232"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:00:36.303Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek4_canvas9",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/reni/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek4/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Guido Reni, David con la testa di Golia, 1620-1630",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q79405816",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek4/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Guido. 1954 : (\"Io Guido Reni\")",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek4/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "queste teste decapitate, servite sul piatto d’oro da un",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19321/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=188,2029,1418,45"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek4/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q20268270/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1237,1025,507,332"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q18572299",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/PreiconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-22T16:17:28.800Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://example.org/interim/ekph_relation",
+      "type": "IntermedialRelation",
+      "hasSourceMedium": "https://w3id.org/interim/mediumText",
+      "hasTargetMedium": "https://w3id.org/interim/mediumImage",
+      "producesObject": [
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek4_canvas10",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek5_canvas10",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek7_canvas10",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek6_canvas10",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek8_canvas21",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek10_canvas21",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek9_canvas21",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek11_canvas21",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek12_canvas24",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek13_canvas24",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek14_canvas24",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek1_canvas3",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek1_canvas4",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek2_canvas9",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek3_canvas9",
+        "http://w3id.org/interim/ek-raimondi-kb/reni/ekphrasis/ek4_canvas9"
+      ]
+    }
+  ]
+}

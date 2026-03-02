@@ -1,0 +1,54 @@
+# CQ3.2 — For each annotation, what is the content and what are the targeted IIIF resources (facsimile + image)?
+
+PREFIX oa:   <http://www.w3.org/ns/oa#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?annotation
+       (SAMPLE(?bodyValue) AS ?bodyValue)
+       (GROUP_CONCAT(DISTINCT ?facsimileURL; SEPARATOR=" | ") AS ?facsimileTargets)
+       (GROUP_CONCAT(DISTINCT ?imageURL;     SEPARATOR=" | ") AS ?imageTargets)
+WHERE {
+  ?annotation a oa:Annotation ;
+             oa:hasBody ?body ;
+             oa:hasTarget ?t .
+
+  OPTIONAL { ?body rdf:value ?bodyValue . }
+
+  ?t oa:hasSource ?source .
+  OPTIONAL {
+    ?t oa:hasSelector ?sel .
+    ?sel rdf:value ?xywhRaw .
+  }
+
+  BIND(
+    IF(BOUND(?xywhRaw),
+       REPLACE(STR(?xywhRaw), "^xywh=", ""),
+       ""
+    ) AS ?xywh
+  )
+
+  BIND(
+    IF(STRLEN(?xywh) > 0,
+       CONCAT(STR(?source), "#xywh=", ?xywh),
+       STR(?source)
+    ) AS ?recomposed
+  )
+
+  # IMAGE targets
+  BIND(
+    IF(isIRI(?t) && STRENDS(STR(?t), "/target/image"),
+       ?recomposed,
+       ""
+    ) AS ?imageURL
+  )
+
+  # FACSIMILE targets
+  BIND(
+    IF(!(isIRI(?t) && STRENDS(STR(?t), "/target/image")),
+       ?recomposed,
+       ""
+    ) AS ?facsimileURL
+  )
+}
+GROUP BY ?annotation
+ORDER BY ?annotation

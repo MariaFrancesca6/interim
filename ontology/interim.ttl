@@ -1,0 +1,197 @@
+@prefix interim: <https://w3id.org/interim/#> .
+@prefix miro: <https://w3id.org/miro/> .
+@prefix geko: <https://w3id.org/geko/#> .
+@prefix mlao: <https://w3id.org/mlao/#> .
+@prefix icon: <https://w3id.org/icon/ontology/> .
+@prefix hico: <http://purl.org/emmedi/hico/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sc: <https://iiif.io/api/model/shared-canvas/1.0/#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://w3id.org/interim/#> a owl:Ontology ;
+    owl:versionIRI <https://w3id.org/interim/#> ;
+    owl:versionInfo "1.0.0" ;
+    owl:imports <https://w3id.org/geko/#> ;
+    dct:title "INTERIM Ontology" ;
+    dct:description "INTERIM Ontology describes intermedial relations."@en ;
+    dct:creator <https://orcid.org/0009-0003-0559-0409> .
+
+#################################################################
+#    1. INTERIM module (Intermedial Relations)
+#################################################################
+
+# Classes
+
+interim:IntermedialRelation a owl:Class ;
+    rdfs:subClassOf crm:E89_Propositional_Object ;
+    owl:equivalentClass miro:IntermedialRelation ;
+    owl:disjointWith interim:IntermedialObject ;
+    rdfs:comment "The core class of INTERIM representing the relationship between two different media."@en .
+
+interim:IntermedialObject a owl:Class ;
+    rdfs:subClassOf crm:E73_Information_Object ;
+    owl:disjointWith interim:IntermedialRelation ;
+    rdfs:comment "The resulting object in which the intermedial relation is instantiated."@en .
+
+
+# Object Properties
+
+interim:producesObject a owl:ObjectProperty ;
+    rdfs:domain interim:IntermedialRelation ;
+    rdfs:range interim:IntermedialObject ;
+    owl:inverseOf interim:objectProducedBy ;
+    rdfs:comment "This property links the relation to the intermedial object."@en .
+
+interim:objectProducedBy a owl:ObjectProperty ;
+    rdfs:domain interim:IntermedialObject ;
+    rdfs:range interim:IntermedialRelation ;
+    owl:inverseOf interim:producesObject .
+
+interim:hasSourceMedium a owl:ObjectProperty ;
+    rdfs:domain interim:IntermedialRelation ;
+    rdfs:range skos:Concept ;
+    owl:equivalentProperty miro:hasMediumA ;
+    rdfs:comment "This property identifies the source medium in the relation."@en.
+
+interim:hasTargetMedium a owl:ObjectProperty ;
+    rdfs:domain interim:IntermedialRelation ;
+    rdfs:range skos:Concept ;
+    owl:equivalentProperty miro:hasMediumB ;
+    rdfs:comment "This property identifies the target medium in the relation."@en .
+
+interim:mediaScheme a skos:ConceptScheme ;
+    dct:title "Media Type"@en ;
+    skos:prefLabel "Media type scheme"@en ;
+    skos:definition "Controlled vocabulary of media types."@en .
+
+interim:mediumImage a skos:Concept ;
+    skos:inScheme interim:mediaScheme ;
+    skos:prefLabel "Image"@en ;
+    skos:definition "Image pertains to the broader category of visual media"@en .
+
+interim:mediumText a skos:Concept ;
+    skos:inScheme interim:mediaScheme ;
+    skos:prefLabel "Text"@en ;
+    skos:definition "Text pertains to the broader category of linguistic media"@en .
+
+
+#################################################################
+#    2. GEkO module (Ekphrasis Modeling)
+#################################################################
+
+# Classes
+
+geko:Ekphrasis a owl:Class .
+geko:MimeticEkphrasis a owl:Class .
+geko:NotionalEkphrasis a owl:Class .
+
+# Object Properties
+
+geko:hasTextualReferent a owl:ObjectProperty .
+geko:hasIconicReferent a owl:ObjectProperty .
+geko:hasEkphrasticModality a owl:ObjectProperty .
+geko:hasAuthor a owl:ObjectProperty .
+
+geko:modalitiesScheme a skos:ConceptScheme .
+geko:denotation a skos:Concept .
+geko:dynamization a skos:Concept .
+geko:integration a skos:Concept .
+
+
+#################################################################
+#    3. ANNOTATION module (Technical Implementation)
+#################################################################
+
+# Classes
+
+crm:E33_Linguistic_Object a owl:Class .
+crm:E1_CRM_Entity a owl:Class .
+lrmoo:F1_Work a owl:Class . 
+lrmoo:F2_Expression a owl:Class .
+oa:Annotation a owl:Class; 
+    rdfs:subClassOf prov:Entity .
+oa:FragmentSelector a owl:Class .
+oa:Motivation a owl:Class .
+oa:SpecificResource a owl:Class .
+oa:Text a owl:Class .
+oa:TextualBody a owl:Class .
+sc:Manifest a owl:Class .
+sc:Canvas a owl:Class .
+prov:Collection a owl:Class .
+prov:Entity a owl:Class .
+foaf:Person a owl:Class .
+skos:Concept a owl:Class .
+skos:ConceptScheme a owl:Class .
+mlao:Anchor a owl:Class .
+icon:PreiconographicalSubject a owl:Class .
+icon:IconographicalSubject a owl:Class .
+icon:IconologicalSubject a owl:Class .
+hico:InterpretationAct a owl:Class .
+hico:InterpretationType a owl:Class .
+hico:InterpretationCriterion a owl:Class .
+miro:IntermedialRelation a owl:Class .
+miro:MediaCombination a owl:Class .
+miro:MediaTransformation a owl:Class.
+miro:IntermedialReference a owl:Class .
+miro:EkphrasticRelation a owl:Class .
+
+# Properties
+
+prov:hadMember a owl:ObjectProperty ;
+    rdfs:domain geko:Ekphrasis ; 
+    rdfs:range oa:Annotation .
+
+oa:hasBody a owl:ObjectProperty .
+
+oa:hasTarget a owl:ObjectProperty .
+
+oa:motivatedBy a owl:ObjectProperty .
+
+oa:hasSelector a owl:ObjectProperty .
+
+oa:hasSource a owl:ObjectProperty .
+
+dct:isPartOf a owl:ObjectProperty .
+
+mlao:hasAnchor a owl:ObjectProperty ;
+    rdfs:domain oa:Annotation ;
+    rdfs:range mlao:Anchor .
+
+mlao:isAnchoredTo a owl:ObjectProperty ;
+    rdfs:domain mlao:Anchor ;
+    rdfs:range crm:E1_CRM_Entity .
+
+mlao:hasConceptualLevel a owl:ObjectProperty ;
+    rdfs:domain mlao:Anchor ;
+    rdfs:range [ a owl:Class ; 
+                 owl:unionOf ( icon:PreiconographicalSubject 
+                               icon:IconographicalSubject 
+                               icon:IconologicalSubject ) ] .
+
+prov:wasGeneratedBy a owl:ObjectProperty ;
+    rdfs:domain oa:Annotation ;
+    rdfs:range hico:InterpretationAct .
+
+hico:hasInterpretationType a owl:ObjectProperty .
+hico:hasInterpretationCriterion a owl:ObjectProperty .
+
+# Data Properties 
+
+dct:created a owl:DatatypeProperty ;
+    rdfs:range xsd:dateTime .
+
+rdf:value a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+foaf:name a owl:DatatypeProperty ;
+    rdfs:domain foaf:Person ;
+    rdfs:range xsd:string .

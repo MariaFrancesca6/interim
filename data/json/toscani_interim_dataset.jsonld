@@ -1,0 +1,2657 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    {
+      "@version": 1.1,
+      "interim": "https://w3id.org/interim/#",
+      "geko": "https://w3id.org/geko/#",
+      "mlao": "https://w3id.org/mlao/#",
+      "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+      "lrmoo": "http://iflastandards.info/ns/lrm/lrmoo/",
+      "icon": "https://w3id.org/icon/ontology/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "hico": "http://purl.org/emmedi/hico/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dcterms": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "id": {
+        "@id": "@id",
+        "@type": "@id"
+      },
+      "type": {
+        "@id": "@type",
+        "@type": "@id"
+      },
+      "IntermedialRelation": "interim:IntermedialRelation",
+      "IntermedialObject": "interim:IntermedialObject",
+      "Medium": "interim:Medium",
+      "Ekphrasis": "geko:Ekphrasis",
+      "MimeticEkphrasis": "geko:MimeticEkphrasis",
+      "NotionalEkphrasis": "geko:NotionalEkphrasis",
+      "Anchor": "mlao:Anchor",
+      "PreiconographicalSubject": "icon:PreiconographicalSubject",
+      "IconographicalSubject": "icon:IconographicalSubject",
+      "IconologicalSubject": "icon:IconologicalSubject",
+      "F1_Work": "lrmoo:F1_Work",
+      "F2_Expression": "lrmoo:F2_Expression",
+      "hasSourceMedium": {
+        "@id": "interim:hasSourceMedium",
+        "@type": "@id"
+      },
+      "hasTargetMedium": {
+        "@id": "interim:hasTargetMedium",
+        "@type": "@id"
+      },
+      "producesObject": {
+        "@id": "interim:producesObject",
+        "@type": "@id"
+      },
+      "objectProducedBy": {
+        "@id": "interim:objectProducedBy",
+        "@type": "@id"
+      },
+      "hasAuthor": {
+        "@id": "geko:hasAuthor",
+        "@type": "@id"
+      },
+      "isAuthorOf": {
+        "@id": "geko:isAuthorOf",
+        "@type": "@id"
+      },
+      "hasIconicReferent": {
+        "@id": "geko:hasIconicReferent",
+        "@type": "@id"
+      },
+      "isIconicReferentOf": {
+        "@id": "geko:isIconicReferentOf",
+        "@type": "@id"
+      },
+      "hasTextualReferent": {
+        "@id": "geko:hasTextualReferent",
+        "@type": "@id"
+      },
+      "isTextualReferentOf": {
+        "@id": "geko:isTextualReferentOf",
+        "@type": "@id"
+      },
+      "hasEkphrasticModality": {
+        "@id": "geko:hasEkphrasticModality",
+        "@type": "@id"
+      },
+      "modalitiesScheme": "geko:modalitiesScheme",
+      "denotation": "geko:denotation",
+      "dynamization": "geko:dynamization",
+      "integration": "geko:integration",
+      "mediaScheme": "interim:mediaScheme",
+      "image": "interim:mediumImage",
+      "text": "interim:mediumText",
+      "hasAnchor": {
+        "@id": "mlao:hasAnchor",
+        "@type": "@id"
+      },
+      "isAnchoredTo": {
+        "@id": "mlao:isAnchoredTo",
+        "@type": "@id"
+      },
+      "hasConceptualLevel": {
+        "@id": "mlao:hasConceptualLevel",
+        "@type": "@id"
+      },
+      "Collection": "prov:Collection",
+      "Entity": "prov:Entity",
+      "hadMember": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "items": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "wasGeneratedBy": {
+        "@id": "prov:wasGeneratedBy",
+        "@type": "@id"
+      },
+      "InterpretationAct": {
+        "@id": "hico:InterpretationAct",
+        "@type": "@id"
+      },
+      "hasInterpretationType": {
+        "@id": "hico:hasInterpretationType",
+        "@type": "@id"
+      },
+      "hasInterpretationCriterion": {
+        "@id": "hico:hasInterpretationCriterion",
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+  "type": [
+    "AnnotationCollection",
+    "Collection"
+  ],
+  "label": "Intermedial dataset: toscani",
+  "items": [
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1_canvas5",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Maso di Banco, Incoronazione della Vergine (affresco), 1335-1350",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Nell’Incoronazione della Vergine",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=121,833,1464,39"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://fotothek.biblhertz.it/iiif/3/bh025013/Canvas/recto",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=45,63,356,170"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T09:04:58.732Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " intorno alla figura di Gesù e della madre",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=121,833,1464,39"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://fotothek.biblhertz.it/iiif/3/bh025013/Canvas/recto",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=182,133,94,77"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T09:05:22.152Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "più fredde di vita di un marmo pisano",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=121,833,1464,39"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=133,911,1119,36"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1/anno_2/target/image",
+              "type": "SpecificResource",
+              "source": "https://fotothek.biblhertz.it/iiif/3/bh025013/Canvas/recto",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=182,132,94,78"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T09:12:59.716Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1/anno_3",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "posano i busti, anche solo le teste di santi di angeli per sempre immobili",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=133,911,1119,36"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1201,881,58,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1252,913,305,32"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1/anno_3/target/image",
+              "type": "SpecificResource",
+              "source": "https://fotothek.biblhertz.it/iiif/3/bh025013/Canvas/recto",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=282,143,59,65"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T09:13:32.809Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_4",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1/anno_4",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "Volti, profili: occhi, bocche, nasi, fronti pietrificati nello spazio, nel momento infinitesimo di quel sentimento per cui furon vivi.  Maschere di un’umanità oggettivata, racchiuse, recinte, prigioniere dentro le sbarre materiali dei nimbi di bronzo, di acciaio",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=133,987,1446,40"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=135,1063,920,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=135,1063,920,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=847,1021,186,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1055,1065,488,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=131,1137,1450,47"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1/anno_4/target/image",
+              "type": "SpecificResource",
+              "source": "https://fotothek.biblhertz.it/iiif/3/bh025013/Canvas/recto",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=280,152,70,48"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/PreiconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T09:14:17.592Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_5",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1/anno_5",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "Solo il colore, là dentro, è il ricordo di una vita, di un sangue rappreso, mineralizzato, che preferì l’eternità del tempo, alla dolcezza dell’ora, del giorno.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=133,1211,1454,45"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=125,1287,1006,45"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_6",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek2_canvas5",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek2/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Maso di Banco, Figura di santo (affresco), ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek2/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek2/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "un frammento: una mezza figura di santo. Già ritenuto un tempo cosa di Maso medesimo, ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=127,1441,1078,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1151,1394,76,35"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1205,1443,372,44"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek2/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": " la forma respirante appena, con un colore sensibile, dolcemente scorrevole.",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p5",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=131,1819,1446,41"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek3_canvas6",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek3/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Maso di Banco, Fregio Incoronazione della Vergine (affresco), ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek3/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek3/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Nell’arco: nel fregio dell'arco <???> soprastante l’Incoronazione, sono <???> quelle teste di angeli:  una è di fanciulla,  lo sguardo lievemente solleva- to verso l’alto, la tenera bocca socchiusa",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=594,609,1055,36"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=195,685,588,42"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=611,648,222,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=783,690,187,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=945,648,25,31"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=970,688,683,39"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=970,688,683,39"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=199,754,1444,51"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=199,754,1444,51"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek3/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://fotothek.biblhertz.it/iiif/3/bh025008/Canvas/recto",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=25,45,276,342"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T09:21:47.649Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek3/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": " i capelli morbidi che fuggono sul collo",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=199,754,1444,51"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek3/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://fotothek.biblhertz.it/iiif/3/bh025008/Canvas/recto",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=163,199,122,118"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/PreiconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T09:23:02.937Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek3/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": " Dolce, come un madonna-ragazza di <???> Giottino. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=199,754,1444,51"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=207,829,1430,52"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek4_canvas6",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek4/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Maso di Banco, Cristo coronato di spine (affresco), ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek4/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek4/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "un altro frammento: Cristo",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=201,906,1458,51"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek4/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "coronato di spine,",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=201,906,1458,51"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek4/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "gli oc- chi cuciti, di nelle  ciglia sottili come le spine  i fini capelli confusi alla barba sottile",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=201,906,1458,51"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=191,984,219,44"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=375,949,52,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=410,981,1251,48"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=410,981,1251,48"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5_canvas6",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Andrea Orcagna, Profeti (affresco), ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "È un gruppo, qui, di profeti, staccati dai muri di S. Maria Novella.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=205,1361,1454,56"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=207,1437,1444,62"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "figura affacciata da aperture,",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=213,1600,913,39"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "da ideali finestre aperte spalancate  sulla vita di quel tempo fioren- tino.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=213,1600,913,39"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=995,1559,168,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1126,1597,515,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p6",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=199,1665,1432,52"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Andrea Orcagna, Profeti (affresco), ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "Si affacciano, questi personaggi colmi di vita, dal pertugio quadrilobato:",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=147,601,1392,42"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "finestrelle di un loggione, di un ultimo piano sotto il tetto, ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=147,601,1392,42"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=131,675,1430,46"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "dai cui si gode lo spettacolo bellissimo dell’e- sistenza umana, ognuno col proprio impetuoso pensiero, rivolgendo silenziose, profonde oc- chiate alla platea, dove hanno goduto dei frutti più intensi",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=131,675,1430,46"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=123,758,1460,41"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=125,833,1216,40"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5/anno_3",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "il giovane, pieno il viso pieno, incorniciato da capelli scuri, con la peluria nuova che gli affiora, dolce come la vita, sulle labbra e sulla fossetta del mento. L’altro: dallo sguardo in tralice, incorniciato dal appoggiato al  suo cartiglio sibillino. Con occhi bianchi, vigorosi, di giovane vitello.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=125,833,1216,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1215,801,188,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1341,837,228,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=135,909,1424,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=137,983,1007,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=137,983,1007,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=911,949,250,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1144,984,405,35"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=123,1058,1424,45"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_4",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5/anno_4",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "Troppo forti, tutti, per stare imprigionati, dentro la grata, il disegno geometrico in cui il pittore li ha confinati",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=123,1058,1424,45"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=125,1135,1250,40"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_5",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Giottino, Tabernacolo di via del Leone (affresco), ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": "https://catalogo.fondazionezeri.unibo.it/scheda/opera/2812/Giotto%20di%20Maestro%20Stefano%2C%20Madonna%20con%20Bambino%20in%20trono%20e%20santi"
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "il patetico Giottino, della “scena” del suo affresco: il tabernacolo già nel muro all’angolo fra via del Leone e via Santa Maria",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=559,1287,1022,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=136,1358,1429,50"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "in questo brano di muro dipinto, ostenta la meraviglia di una cultura, insolita per Firenze, votata al gu- sto, all’estetica da una civiltà “cortese” e francesizzante, squisita, rarissima. La Madonna è un il prelibato campione di una tale civiltà mista: figlia orgogliosa <???> di un sangue aristo- critico, gentile,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=129,1825,142,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=227,1785,110,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=271,1817,1310,42"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=123,1889,1454,48"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=129,1965,1452,46"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=129,2043,1456,48"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "siede sull’alto scranno,",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=129,2043,1456,48"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://vocab.getty.edu/page/aat/300037892"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6/anno_3",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "esibendo puntigliosa il grosso bambino",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=129,2043,1456,48"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_4",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek7_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek7/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Giottino, Pietà di San Remigio, 1360",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q3904410",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek7/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek7/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Pietà di S. Remi- gio agli Uffizi,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1050,1667,537,46"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p7",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=149,1743,1442,46"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Giottino, Tabernacolo di via del Leone (affresco), ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": "https://catalogo.fondazionezeri.unibo.it/scheda/opera/2812/Giotto%20di%20Maestro%20Stefano%2C%20Madonna%20con%20Bambino%20in%20trono%20e%20santi"
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Santi ed angeli la fiancheggiano",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=207,532,1436,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=215,611,1426,38"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "come in un perfetto cerimoniale di corte",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=215,611,1426,38"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "La scena, così descritta, vive come sul tessuto colorato di antico arazzo, venuto dalle fabbriche della Loira.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=215,611,1426,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=207,687,573,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=585,643,312,39"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=780,686,219,33"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek8_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek8/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Paolo Uccello, Chiostro Verde (affreschi), 1447",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q3974472",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek8/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek8/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Di Paolo Uccello, sono qui le quattro grandi scene dal Chio- stro Verde. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=221,834,1436,44"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=207,913,1450,36"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek8/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q15965567/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=106,53,7809,6378"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q3974472"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T09:59:05.929Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek10_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek10/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Piero della Francesca, Figura di Santo da Sansepolcro (affresco), 1460",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q3947516",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek10/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek10/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "La figura di san- to di Piero della Francesca, riscoperta in una chiesa di Sansepolcro",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=211,1139,1458,47"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=207,1215,1450,44"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek10/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q3947516/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=203,37,798,1356"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q3947516",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T10:04:54.069Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek10/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "s’impone, forse, eccessiva- mente, per qualcosa di troppo nella doratura di classico, \"di antico\",  che sta forse nel gesto, nel modo di porsi",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=207,1215,1450,44"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=217,1293,1016,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=675,1249,580,34"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek9_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek9/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Filippo Lippi, Conferimento della Regola, 1430",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q3686606",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek9/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek9/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Filippo Lippi è rappresentato dal frammentario affresco della Conferma della regola.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1114,1068,537,35"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=211,1139,1458,47"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek9/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q3686606/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=12,35,484,309"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q3686606",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T09:54:01.362Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek11_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek11/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Sandro Botticelli, Annunciazione (affresco), 1481",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek11/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek11/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Le due persone dell’annun- ciazione di Botticelli si muovono in una fredda luce verde d'acquario, il cui fondo è di marmi eleganti, tagliati in forme geometriche di geometria.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1233,1292,428,43"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=217,1369,1444,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=211,1449,134,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=239,1411,301,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=345,1447,326,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=540,1413,193,34"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek5/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Giovanni Consalvo, Vita di San Benedetto (affreschi), 1436-1439",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q133284679",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "il Maestro del Chiostro degli aranci, della Badia fiorentina, proveremo di infilare mettere qualche parola.  Sono dodici storie della vita di San Benedetto: qui ne sono venute dieci, di qualità altissima.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=996,1447,661,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=207,1522,656,39"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=719,1487,138,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=863,1523,266,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p8",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=211,1595,1466,45"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek6/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12_canvas9",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/toscani/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Giovanni Consalvo, Vita di San Benedetto (affreschi), 1436-1439",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q133284679",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Pittori toscani sul muro : mostra al Forte di Firenze : 1. agosto 1957",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "C’è poco da stare allegri nella vita di questo santo: fin da ragazzo, deve aggiustare i guai combinati dalla nutrice. Fatto uomo: spezza con le mani un bicchiere di vino avvelena- to. Salva un frate, moribondo fra le macerie",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=159,529,1396,43"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=155,605,1428,53"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=155,605,1428,53"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=151,684,1420,43"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=151,684,1420,43"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q133284679/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=428,681,3177,1995"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "https://iconclass.org/11H(BENEDICT)562",
+            "hasConceptualLevel": "https://w3id.org/icon/ontology/IconographicalSubject"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T10:11:16.551Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "S’incontra, al solito, col demonio",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=151,684,1420,43"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "https://iconclass.org/11H(BENEDICT)54"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "Ripesca falci nel corso del fiume. E quando è ora di  refettorio, <???> manda un grazioso corvo <???> a beccare un pane avvelenato, che gli avevano offerto preparato i fratelli.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=151,684,1420,43"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=153,762,542,35"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=153,762,542,35"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=605,723,120,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=695,759,449,37"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1040,714,116,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1144,761,419,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1443,727,106,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=143,835,648,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=643,793,272,36"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "https://iconclass.org/11H(BENEDICT)532"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12/anno_3",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "la materia pittorica; una sostanza dura, che si lascia scavare da un ferro <???>, taglientissimo tanto da lasciare i margini vivi della forma scavata. Una densa luce verde:",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=141,1060,1454,46"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=139,1134,1460,42"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_4",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12/anno_4",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "verde come l’olio d’o- liva, cola su tali forme, senza inzupparle. Le fa sudare, come lo scirocco. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=139,1134,1460,42"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://dl.ficlit.unibo.it/iiif/2/19195/canvas/p9",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=153,1214,1412,41"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_5",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://example.org/interim/ekph_relation",
+      "type": "IntermedialRelation",
+      "hasSourceMedium": "https://w3id.org/interim/mediumText",
+      "hasTargetMedium": "https://w3id.org/interim/mediumImage",
+      "producesObject": [
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek1_canvas5",
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek2_canvas5",
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek3_canvas6",
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek4_canvas6",
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5_canvas6",
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek5_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek7_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek6_canvas8",
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek8_canvas8",
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek10_canvas8",
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek9_canvas8",
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek11_canvas8",
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12_canvas8",
+        "http://w3id.org/interim/ek-raimondi-kb/toscani/ekphrasis/ek12_canvas9"
+      ]
+    }
+  ]
+}

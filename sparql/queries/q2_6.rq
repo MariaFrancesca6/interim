@@ -1,0 +1,44 @@
+# CQ2.6 Among the ekphrases classified as notional, which ones are notional because the evoked artwork is not mentioned explicitly, and which ones are notional because the analysis could not confidently identify an unambiguous resource for the iconic referent?
+
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:   <http://www.w3.org/2002/07/owl#>
+PREFIX geko:  <https://w3id.org/geko/#>
+
+SELECT ?category (COUNT(DISTINCT ?ekph) AS ?nEkph)
+WHERE {
+  ?ekph rdf:type geko:Ekphrasis ;
+        geko:hasIconicReferent ?work .
+  ?work rdfs:label ?label .
+
+  BIND(LCASE(STR(?label)) AS ?labelNorm)
+
+  BIND(
+    EXISTS {
+      ?work owl:sameAs ?sa .
+      FILTER(STRLEN(STR(?sa)) > 0)
+    } AS ?hasNonEmptySameAs
+  )
+
+  BIND(
+    EXISTS {
+      ?work rdfs:seeAlso ?so .
+      FILTER(STRLEN(STR(?so)) > 0)
+    } AS ?hasNonEmptySeeAlso
+  )
+
+  BIND(
+    IF(STRLEN(?labelNorm) = 0,
+       "unclassified",
+       IF(?labelNorm = "unknown work",
+          "notional_(unknown_work)",
+          IF(?hasNonEmptySameAs || ?hasNonEmptySeeAlso,
+             "mimetic_identified_(nonempty_sameAs_or_seeAlso)",
+             "mimetic_unknown_(label_only)"
+          )
+       )
+    ) AS ?category
+  )
+}
+GROUP BY ?category
+ORDER BY DESC(?nEkph)

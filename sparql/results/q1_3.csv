@@ -1,0 +1,2 @@
+relation,sourceMedium,targetMedium,direction
+https://w3id.org/interim/ek-raimondi-kb/ekph_relation,https://w3id.org/interim/mediumText,https://w3id.org/interim/mediumImage,https://w3id.org/interim/mediumText -> https://w3id.org/interim/mediumImage

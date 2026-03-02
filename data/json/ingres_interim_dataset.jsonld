@@ -1,0 +1,3436 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    {
+      "@version": 1.1,
+      "interim": "https://w3id.org/interim/#",
+      "geko": "https://w3id.org/geko/#",
+      "mlao": "https://w3id.org/mlao/#",
+      "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+      "lrmoo": "http://iflastandards.info/ns/lrm/lrmoo/",
+      "icon": "https://w3id.org/icon/ontology/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "hico": "http://purl.org/emmedi/hico/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dcterms": "http://purl.org/dc/terms/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "id": {
+        "@id": "@id",
+        "@type": "@id"
+      },
+      "type": {
+        "@id": "@type",
+        "@type": "@id"
+      },
+      "IntermedialRelation": "interim:IntermedialRelation",
+      "IntermedialObject": "interim:IntermedialObject",
+      "Medium": "interim:Medium",
+      "Ekphrasis": "geko:Ekphrasis",
+      "MimeticEkphrasis": "geko:MimeticEkphrasis",
+      "NotionalEkphrasis": "geko:NotionalEkphrasis",
+      "Anchor": "mlao:Anchor",
+      "PreiconographicalSubject": "icon:PreiconographicalSubject",
+      "IconographicalSubject": "icon:IconographicalSubject",
+      "IconologicalSubject": "icon:IconologicalSubject",
+      "F1_Work": "lrmoo:F1_Work",
+      "F2_Expression": "lrmoo:F2_Expression",
+      "hasSourceMedium": {
+        "@id": "interim:hasSourceMedium",
+        "@type": "@id"
+      },
+      "hasTargetMedium": {
+        "@id": "interim:hasTargetMedium",
+        "@type": "@id"
+      },
+      "producesObject": {
+        "@id": "interim:producesObject",
+        "@type": "@id"
+      },
+      "objectProducedBy": {
+        "@id": "interim:objectProducedBy",
+        "@type": "@id"
+      },
+      "hasAuthor": {
+        "@id": "geko:hasAuthor",
+        "@type": "@id"
+      },
+      "isAuthorOf": {
+        "@id": "geko:isAuthorOf",
+        "@type": "@id"
+      },
+      "hasIconicReferent": {
+        "@id": "geko:hasIconicReferent",
+        "@type": "@id"
+      },
+      "isIconicReferentOf": {
+        "@id": "geko:isIconicReferentOf",
+        "@type": "@id"
+      },
+      "hasTextualReferent": {
+        "@id": "geko:hasTextualReferent",
+        "@type": "@id"
+      },
+      "isTextualReferentOf": {
+        "@id": "geko:isTextualReferentOf",
+        "@type": "@id"
+      },
+      "hasEkphrasticModality": {
+        "@id": "geko:hasEkphrasticModality",
+        "@type": "@id"
+      },
+      "modalitiesScheme": "geko:modalitiesScheme",
+      "denotation": "geko:denotation",
+      "dynamization": "geko:dynamization",
+      "integration": "geko:integration",
+      "mediaScheme": "interim:mediaScheme",
+      "image": "interim:mediumImage",
+      "text": "interim:mediumText",
+      "hasAnchor": {
+        "@id": "mlao:hasAnchor",
+        "@type": "@id"
+      },
+      "isAnchoredTo": {
+        "@id": "mlao:isAnchoredTo",
+        "@type": "@id"
+      },
+      "hasConceptualLevel": {
+        "@id": "mlao:hasConceptualLevel",
+        "@type": "@id"
+      },
+      "Collection": "prov:Collection",
+      "Entity": "prov:Entity",
+      "hadMember": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "items": {
+        "@id": "prov:hadMember",
+        "@type": "@id"
+      },
+      "wasGeneratedBy": {
+        "@id": "prov:wasGeneratedBy",
+        "@type": "@id"
+      },
+      "InterpretationAct": {
+        "@id": "hico:InterpretationAct",
+        "@type": "@id"
+      },
+      "hasInterpretationType": {
+        "@id": "hico:hasInterpretationType",
+        "@type": "@id"
+      },
+      "hasInterpretationCriterion": {
+        "@id": "hico:hasInterpretationCriterion",
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+  "type": [
+    "AnnotationCollection",
+    "Collection"
+  ],
+  "label": "Intermedial dataset: ingres",
+  "items": [
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek8_canvas10",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek8/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jean-Auguste-Dominique Ingres, Autoritratto (Museo Condé), 1804",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q15844756",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek8/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek8/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "L'autoritratto del Museo Condé ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0010Q1958230010c4v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=585,1579,1065,39"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek8/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q15844756/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=488,78,2285,3307"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q1236032"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:21:02.928Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek8/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "risuona nella voce profonda, e di verità umana, di un ricercatore di degnità pittorica",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0010Q1958230010c4v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=585,1579,1065,39"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0010Q1958230010c4v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=242,1646,1394,57"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek9_canvas10",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek9/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jean-Auguste-Dominique Ingres, Ritratto di ragazzo, 1804",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek9/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek9/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "in lavori dello stesso anno '804: dal punto realistico, violento e cocente, rappresentato dal Ritratto di ragazzo,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0010Q1958230010c4v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=240,1799,1426,58"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0010Q1958230010c4v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=240,1876,1428,57"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10_canvas10",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jean-Auguste-Dominique Ingres, Ritratto di Gilibert, 1805",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q18518827",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": ", il Ritratto di Gilibert",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0010Q1958230010c4v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=244,2024,1428,57"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q18518827/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=729,164,3590,5362"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q94414021"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:26:58.496Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10_canvas11",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jean-Auguste-Dominique Ingres, Ritratto di Gilibert, 1805",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q18518827",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "viso atteggiato al patetico di natura,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=160,510,1207,42"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q18518827/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1375,283,1976,1930"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:27:23.506Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "perfino le pieghe strapazzate delle maniche rigonfie e dei panta- loni \"che fanno la bassa\" (ottenute con freghi affrettati e superficiali <???> di un  pennello a setole rade e stanche)",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=160,510,1207,42"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1326,468,123,37"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1367,518,185,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=160,592,73,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=140,542,304,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=233,589,763,35"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=928,546,73,35"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=996,590,572,40"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q18518827/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=2771,3069,1284,1396"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:27:48.252Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "dichia- rano un'inclinazione ad una verità poetica afflitta di significati umani",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=996,590,572,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=148,660,1412,43"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek11_canvas11",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek11/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jean-Auguste-Dominique Ingres, Ritratto di Madame Rivière, 1805",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q15617847",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek11/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek11/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Il Ritrat- to di Mad.me Rivière",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=146,1114,1432,44"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=146,1191,1416,47"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek11/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q15617847/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=344,33,3096,4673"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q15617809"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:32:16.202Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek11/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "Concepito nella frontalità un poco funebre di una sedente etrusca,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=158,1420,1406,40"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=152,1496,683,38"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek11/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q15617847/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=845,328,2324,3787"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:33:10.074Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek11/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "la figura si modella a poco a poco  con la opulenza sensuale di bassorilievo-schiacciato",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=152,1496,683,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=730,1456,240,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=835,1500,236,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=970,1458,156,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1071,1498,487,35"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek11/anno_3",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "Riesce,  alla fine, con la grazia circoscritta di una miniatura persiana, o come un cammeo stile-impero, dentro un ovale dorato che, si direbbe, a ripensarlo, di pochi centimentri d'altezza.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=168,1534,716,38"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=747,1577,795,35"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=160,1646,1398,42"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=166,1720,1404,46"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek11/anno_3/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q15617847/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=38,18,3581,4698"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:34:35.999Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_4",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12_canvas11",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jean-Auguste-Dominique Ingres, Ritratto di Mademoiselle Rivière, 1806",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q24011",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " Ritratto di Mademoiselle Rivière",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=164,1874,1392,44"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q24011/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=134,31,2248,3449"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q15617727"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:39:05.076Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": " l'immagi- ne, vi è felice, lieve",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=154,1950,1406,42"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0011Q1958230011c5r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=150,2030,646,36"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12_canvas12",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jean-Auguste-Dominique Ingres, Ritratto di Mademoiselle Rivière, 1806",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q24011",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "La signorina Rivière appare, nel suo lungo abito di crespo bianco,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=268,510,1284,55"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q24011/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=680,978,1168,2484"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:40:26.723Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "ferma su di un  prato di  alto velluto verde,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=268,510,1284,55"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1534,471,43,30"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1552,508,122,51"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=252,599,524,33"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q24011/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=13,2768,639,672"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:41:06.020Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "portata <???> da una grazia capricciosa, come da un vento verde di primavera che trasporti un angelo- <???> capriolo, una gazzella principessa -gazzella del Pisanello.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=252,599,524,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=691,552,91,41"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=776,596,890,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=258,674,223,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=382,630,214,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=481,672,551,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=948,630,150,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1032,668,638,42"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q2478403"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/anno_3",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Infilato fra il busto legge- ro e i lunghi lunghi guanti di vitello giallo, il boa, il serpente di piuma (vuoto all'interno),",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1032,668,638,42"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=244,752,230,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=370,710,100,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=474,748,1208,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=474,748,1208,36"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/anno_3/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q24011/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=558,1990,1232,618"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:43:09.391Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_4",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/anno_4",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "di latte spumoso, allunga infinitamente le sue spire come il collo tiepido del cigno di Leda.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=474,748,1208,36"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1458,702,164,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=254,814,1422,55"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/anno_4/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q24011/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1070,1601,1175,1703"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q494762"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:46:23.646Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_5",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/anno_5",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " Il capino del del cigno, del boa, si perde in un ciuffo di alghe verdi. Il paesaggio del fondo, nella parete di pianura francese, con la coltre di verdura oltre la riga d'acqua trasparente, il borgo di case bianche, la pieve, il campanile dentro i pini, e la striscia di monti all'orizzonte azzurri",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=254,814,1422,55"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=250,888,1390,55"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=250,888,1390,55"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=254,964,1398,57"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=254,1039,1418,54"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12/anno_5/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q24011/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1319,3182,1077,287"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:47:06.845Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_6",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek13_canvas12",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek13/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jean-Auguste-Dominique Ingres, Ritratto di Lorenzo Bartolini, 1805",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q18578021",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek13/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek13/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "l'amico scultore Lorenzo Bartolini,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=280,1572,1370,55"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek13/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q18578021/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=223,36,3128,4317"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q693288"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:53:15.300Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek13/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "ritto in piedi, eloquente nel gesto come un Talma nell'Amleto di Ducis,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0012Q1958230012c5v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=258,2026,1420,54"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek13/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q18578021/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=9,2142,1403,1141"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q41567"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:53:38.486Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek14_canvas14",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek14/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jean-Auguste-Dominique Ingres, Ritratto di Granet, 1807",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q18415088",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek14/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek14/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "il pittore Granet. Il modello gli piacque. Propose di farne un ritratto: il suo primo ritratto romano. Alla figura, spavalda come un Van Dyck (che Ingres non amava),  una veduta di Roma. Forse è la mole stessa di Villa Medici, che sovrasta le case, le finestre, le altane sotto i tetti di Roma. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0014Q1958230014c6v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1020,700,138,34"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0014Q1958230014c6v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1201,740,479,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0014Q1958230014c6v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=270,800,1396,58"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0014Q1958230014c6v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=270,800,1396,58"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0014Q1958230014c6v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=266,878,1402,56"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0014Q1958230014c6v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=266,878,1402,56"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0014Q1958230014c6v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=270,952,1404,58"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0014Q1958230014c6v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=256,1026,1414,64"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek14/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q18415088/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=48,22,1965,2377"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q1362663"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:59:12.141Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek15_canvas14",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek15/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jean-Auguste-Dominique Ingres, Tondo Villa Borghese, 1806",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q61037208",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek15/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek15/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "due piccoli tondi, gli riuscì di farli: la Villa Borghese, affondata fra gli alberi densi",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0014Q1958230014c6v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=276,1180,1364,58"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0014Q1958230014c6v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=256,1255,1394,59"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek15/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q61037208/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=25,176,424,240"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q1222097"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T13:04:04.888Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek16_canvas14",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek16/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jean-Auguste-Dominique Ingres, Tondo Casino di Raffaello, 1807",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q120671751",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek16/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek16/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "volle compirne un terzo, di quei \"tondini\" in pittura: è la cosidetta Casa di Raffaello, presso Villa Medic",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0014Q1958230014c6v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=268,1492,1278,43"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0014Q1958230014c6v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1446,1460,112,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0014Q1958230014c6v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1546,1500,122,35"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0014Q1958230014c6v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=264,1556,1418,62"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek16/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q120671751/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=42,85,515,465"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q5597"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T13:07:08.562Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek17_canvas17",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek17/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown Work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek17/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek17/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " L'architetto Provost, di",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0017Q1958230017c8r.json",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=142,2018,1418,52"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek17_canvas18",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek17/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown Work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek17/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek17/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "cui lo spirito di ogni pelo: ciglia, sopracciglia, baffi, capelli, è stato interpretato",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=282,495,1412,62"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek17/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "sembra atten- dere, quasi indifferente, la futura trasformazione in volpe, o coniglio",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=282,495,1412,62"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=272,569,1376,62"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek18_canvas18",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek18/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown Work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek18/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek18/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Jeannette Hayard, in idoletto tonchinese, avorio-giallo.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=272,569,1376,62"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=264,643,1390,68"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek19_canvas18",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek19/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown Work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek19/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek19/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Lady Cavendisch: la duplice fioritura, in grappoli, dei  riccioli di bronzo, posa sulla porcellana di un volto <???> da Frago, mentre le incrostazioni,  porcellana, argento, ristagnano sulle camicettes, nel collo, nelle spalle",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=264,643,1390,68"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=268,719,1428,64"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=272,797,1412,64"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek20_canvas18",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek20/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Unknown Work",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek20/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek20/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "Mentre la Destou- ches è troppo \"bella donna\", perchè, in cuor suo, non la consideri la più \"brava\" delle sue modelle da \"cento soldi per posa\". ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=272,797,1412,64"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=276,873,1394,60"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=274,950,1390,63"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek20/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Piume, satins, pizzi, jabots, collane, trafori, tulles, merletti, cascate di piegoline, ampie distese della veste, scialle e sciarpa, nastri finali:",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=274,1024,1408,66"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=266,1100,1408,60"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek20/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "è un grande, dovuto contorno, la cornice di una gioia inestimabile di carne, di dolcezza, di pienezza di carne fem- minile, che leggermente salgono alla testa del pittore.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=266,1100,1408,60"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=272,1174,1402,65"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=266,1252,1420,64"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek21_canvas18",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek21/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jean-Auguste-Dominique Ingres, Ritratto di Mme Mallet, ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek21/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek21/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": " la forte \"posa\" della signora Mallet: la miscela \"eteroclita\" (Baudelaire) vi  é perfetta: la salute della moglie di un \"ingeniere di ponti e strade\", la giusta venustà, il decoro burocratico della toilette,",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=258,1781,1420,66"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=254,1855,1080,60"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1319,1827,25,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1334,1863,356,60"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=250,1927,1434,70"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q3164251"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek5/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek21/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "addossati ad un fondo di veduta, del tipo microspico: dalla Cupola imponente della Cri-",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0018Q1958230018c8v.json",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=254,2011,1436,67"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek5/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek21_canvas19",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek21/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jean-Auguste-Dominique Ingres, Ritratto di Mme Mallet, ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek21/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek21/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "stianità, alla civica registrazione dei palazzi, delle case, delle vetrate, delle finestre e delle tegole sui tetti, ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0019Q1958230019c9r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,497,1408,57"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0019Q1958230019c9r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=136,572,1416,62"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek1_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek1/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jacques-Louis David, Ritratto della marchesa d'Orvilliers, 1790",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q3399481",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek1/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek1/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Il ritratto della marchesa d'Orvilliers, del '90",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,582,1412,57"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek1/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q3399481/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=25,383,2691,3282"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q137759955"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T11:39:40.200Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek3_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek3/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jacques-Louis David, Ritratto di Antoinette Gabrielle Danton, 1793",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q28976720",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek3/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek3/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "Il ritratto della prima moglie di Danton, del '93",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=142,658,1412,62"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek3/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q28976720/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=118,22,449,708"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T11:49:49.167Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek3/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "figlia di un venditore di limo- ni. Il suo viso rotondo, come un frutto di carne, sotto gli occhi ansiosi, dichiara il dramma di una piccola borghese nell'Anno Terribile.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=142,658,1412,62"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,734,1392,53"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=134,812,1412,55"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek3/anno_1/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q28976720/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=177,215,245,226"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q3202120"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T11:50:21.521Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek2_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek2/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jacques-Louis David, La morte di Marat, 1793",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q636537",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek2/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek2/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "il Marat morente, del '93. ",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,582,1412,57"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=142,658,1412,62"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q122290"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek3/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek4_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek4/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jacques-Louis David, Ritratto di Mme Chalgrin, 1794",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek4/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek4/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " il ritratto di Mme Chalgrin",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=130,894,1394,46"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek4/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "Accusata di aver complottato contro la azioni ai danni della Repubblica, condannata, esecuteé il 6 termidoro dell'Anno Due. Salì il palco, pensando all'amico David, rigido convenzionale.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=130,894,1394,46"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=136,968,405,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=144,932,402,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=541,968,987,44"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=130,1038,1424,60"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://viaf.org/viaf/457159474184327661576"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek4/anno_2",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/dynamization",
+          "body": {
+            "type": "TextualBody",
+            "value": "il vento sinistro del Terrore scompone appena <???> i capel- li sciolti in larghi anelli, figura di un tragico, di un disperato dolore, immobile e assor- to",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=134,1110,1366,63"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1488,1097,26,33"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1500,1131,64,45"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=124,1190,1426,58"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=138,1274,1365,52"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_3",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek4/anno_3",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " contro il fondo, che il pittore ha reso con forsennato fregare del pennello",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=138,1274,1365,52"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_4",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek4/anno_4",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "come in  un presagio, ed effetto di orribile tempesta umana. Un fondo inindividuato e miserabile, come un cielo di lana sudicia. Tempo, veramente, da fare pau- ra.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1430,1238,97,49"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1503,1294,41,31"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=134,1352,919,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=254,1308,1094,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1053,1360,503,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=130,1414,1416,60"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek4/anno_5",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek5_canvas7",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek5/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jacques-Louis David, La morte del giovane Bara, 1794",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q3210859",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek5/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek5/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "il giova- ne Joseph Bara, morto per la causa della Libertà. David, in un dipinto rimasto in- completo, immagina il corpo ignudo di <???> un  adolescente, steso a terra",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=130,1414,1416,60"
+              },
+              "label": "Text fragment on the facsimile"
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=126,1494,1396,54"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=128,1574,731,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=805,1541,49,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=859,1580,663,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=859,1580,663,40"
+              }
+            },
+            {
+              "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek5/anno_0/target/image",
+              "type": "SpecificResource",
+              "source": "https://wd-image-positions.toolforge.org/iiif/Q3210859/P18/canvas/c0.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=79,269,2686,1817"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q2226355"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "2026-02-26T12:07:19.926Z",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek5/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+          }
+        },
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek5/anno_1",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/integration",
+          "body": {
+            "type": "TextualBody",
+            "value": "come di uno <???> caduto mortalmente <???> sotto un carro.  Immagine, <???>, spezzata, di un destino più grande <???> degli uomini. <???> Termidoro trattenne la mano del pittore.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=859,1580,663,40"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=128,1650,401,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=464,1604,72,46"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=529,1652,507,44"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=529,1652,507,44"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=884,1618,144,32"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1036,1662,431,34"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=1424,1614,76,36"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=120,1726,481,38"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=300,1689,342,35"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0007Q1958230007c3r.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=601,1730,945,50"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek5/anno_2",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek6_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek6/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jacques-Louis David, Ritratto di Madame Récamier, 1800",
+        "owl:sameAs": "https://www.wikidata.org/wiki/Q2619037",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek6/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek6/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": "la Madame Recamier",
+            "format": "text/plain"
+          },
+          "target": {
+            "type": "SpecificResource",
+            "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0008Q1958230008c3v.json",
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=252,883,1420,62"
+            }
+          },
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q2619037"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek1/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek7_canvas8",
+      "type": [
+        "AnnotationPage",
+        "Ekphrasis"
+      ],
+      "isPartOf": "https://w3id.org/interim/ek-raimondi-kb/ingres/collection",
+      "hasAuthor": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi",
+        "type": "foaf:Person",
+        "name": "Giuseppe Raimondi"
+      },
+      "hasIconicReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek7/iconic_ref",
+        "type": "F1_Work",
+        "rdfs:label": "Jacques-Louis David, Ritratto del convenzionale Gerard con la sua famiglia, ?",
+        "owl:sameAs": "",
+        "rdfs:seeAlso": ""
+      },
+      "hasTextualReferent": {
+        "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek7/textual_ref",
+        "type": "F2_Expression",
+        "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, I disegni \"romani\" di Ingres. Agosto 1958",
+        "owl:sameAs": ""
+      },
+      "objectProducedBy": "http://example.org/interim/ekph_relation",
+      "items": [
+        {
+          "id": "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek7/anno_0",
+          "type": "Annotation",
+          "hasEkphrasticModality": "https://w3id.org/geko/denotation",
+          "body": {
+            "type": "TextualBody",
+            "value": " Convenzionale Gerard con la sua famiglia.",
+            "format": "text/plain"
+          },
+          "target": [
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0008Q1958230008c3v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=252,883,1420,62"
+              }
+            },
+            {
+              "type": "SpecificResource",
+              "source": "https://mariafrancesca6.github.io/GR-ek/canvas/img/derivatives/iiif/ingresgr/0008Q1958230008c3v.json",
+              "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=266,959,1370,56"
+              }
+            }
+          ],
+          "hasAnchor": {
+            "type": "Anchor",
+            "isAnchoredTo": "http://www.wikidata.org/entity/Q289255"
+          },
+          "creator": "Maria Francesca Bocchi",
+          "created": "",
+          "motivatedBy": "commenting",
+          "wasGeneratedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_1",
+            "type": "InterpretationAct",
+            "hasInterpretationType": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching",
+            "hasInterpretationCriterion": "https://w3id.org/interim/ek-raimondi-kb/criterion/textual-analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http://example.org/interim/ekph_relation",
+      "type": "IntermedialRelation",
+      "hasSourceMedium": "https://w3id.org/interim/mediumText",
+      "hasTargetMedium": "https://w3id.org/interim/mediumImage",
+      "producesObject": [
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek8_canvas10",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek9_canvas10",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10_canvas10",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek10_canvas11",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek11_canvas11",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12_canvas11",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek12_canvas12",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek13_canvas12",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek14_canvas14",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek15_canvas14",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek16_canvas14",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek17_canvas17",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek17_canvas18",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek18_canvas18",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek19_canvas18",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek20_canvas18",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek21_canvas18",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek21_canvas19",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek1_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek3_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek2_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek4_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek5_canvas7",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek6_canvas8",
+        "http://w3id.org/interim/ek-raimondi-kb/ingres/ekphrasis/ek7_canvas8"
+      ]
+    }
+  ]
+}

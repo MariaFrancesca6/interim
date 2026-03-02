@@ -1,0 +1,27 @@
+# CQ2.5b — Which ekphrasis are mimetic but not identified? 
+
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:   <http://www.w3.org/2002/07/owl#>
+PREFIX geko:  <https://w3id.org/geko/#>
+
+SELECT DISTINCT ?ekph ?work ?label
+WHERE {
+  ?ekph rdf:type geko:Ekphrasis ;
+        geko:hasIconicReferent ?work .
+  ?work rdfs:label ?label .
+
+  FILTER(STRLEN(STR(?label)) > 0)
+  FILTER(LCASE(STR(?label)) != "unknown work")
+
+  FILTER NOT EXISTS {
+    ?work owl:sameAs ?sa .
+    FILTER(STRLEN(STR(?sa)) > 0)
+  }
+  FILTER NOT EXISTS {
+    ?work rdfs:seeAlso ?so .
+    FILTER(STRLEN(STR(?so)) > 0)
+  }
+}
+ORDER BY ?label ?ekph
+

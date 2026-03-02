@@ -1,0 +1,21 @@
+# CQ2.5a — Which ekphrastic instances are classified as mimetic and which as notional, and what is the distribution of these classes across the corpus?
+
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geko:  <https://w3id.org/geko/#>
+
+SELECT ?derivedClass (COUNT(DISTINCT ?ekph) AS ?nEkph)
+WHERE {
+  ?ekph rdf:type geko:Ekphrasis ;
+        geko:hasIconicReferent ?work .
+  ?work rdfs:label ?label .
+
+  BIND(
+    IF(STRLEN(STR(?label)) = 0,
+       "unclassified",
+       IF(LCASE(STR(?label)) = "unknown work", "notional", "mimetic")
+    ) AS ?derivedClass
+  )
+}
+GROUP BY ?derivedClass
+ORDER BY DESC(?nEkph)

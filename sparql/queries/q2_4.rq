@@ -1,0 +1,19 @@
+# CQ2.4 — For each ekphrasis, what is the asserted iconic referent, and can it be retrieved as an identifiable cultural resource when such identification is possible?
+
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX geko: <https://w3id.org/geko/#>
+
+SELECT DISTINCT ?ekph ?iconicReferent ?identifiedResource
+WHERE {
+  ?ekph rdf:type ?t ;
+        geko:hasIconicReferent ?iconicReferent .
+  ?t rdfs:subClassOf* geko:Ekphrasis .
+
+  OPTIONAL {
+    ?iconicReferent owl:sameAs ?identifiedResource .
+  }
+}
+ORDER BY ?ekph

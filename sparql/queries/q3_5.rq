@@ -1,0 +1,17 @@
+# CQ3.5 — For each annotation: interpretation act, responsible agent, and criteria adopted
+
+PREFIX oa:    <http://www.w3.org/ns/oa#>
+PREFIX prov:  <http://www.w3.org/ns/prov#>
+PREFIX dct:   <http://purl.org/dc/terms/>
+PREFIX hico:  <http://purl.org/emmedi/hico/>
+
+SELECT DISTINCT ?annotation ?act ?agent ?criterion ?type
+WHERE {
+  ?annotation a oa:Annotation ;
+             prov:wasGeneratedBy ?act ;
+             dct:creator ?agent .
+
+  OPTIONAL { ?act hico:hasInterpretationCriterion ?criterion . }
+  OPTIONAL { ?act hico:hasInterpretationType ?type }
+}
+ORDER BY ?annotation ?criterion

@@ -1,0 +1,474 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix interim: <https://w3id.org/interim/#> .
+@prefix miro: <https://w3id.org/miro/> .
+@prefix geko: <https://w3id.org/geko/#> .
+@prefix mlao: <https://w3id.org/mlao/#> .
+@prefix icon: <https://w3id.org/icon/ontology/> .
+@prefix hico: <http://purl.org/emmedi/hico/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix interim-sh: <https://w3id.org/interim/shacl/#> .
+
+# =============================================================================
+# SHACL Shapes for INTERIM Ontology (Intermedial Relations + Ekphrasis)
+# =============================================================================
+# INTERIM imports GEkO. This SHACL file covers:
+#   - Module 1: IntermedialRelation / IntermedialObject / Medium (INTERIM-specific)
+#   - Module 2: Ekphrasis (GEkO classes, constrained in INTERIM context)
+#   - Module 3: Annotation layer (OA + MLAO + HiCO, same as GEkO but with
+#               INTERIM-specific additions like interim:objectProducedBy on Ekphrasis)
+
+# =============================================================================
+#  MODULE 1 — INTERIM: Intermedial Relations
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. IntermedialRelationShape
+#    Validates interim:IntermedialRelation instances.
+#    Must declare source and target media and produce at least one object.
+# -----------------------------------------------------------------------------
+
+interim-sh:IntermedialRelationShape a sh:NodeShape ;
+    sh:targetClass interim:IntermedialRelation ;
+    sh:name "Intermedial Relation shape" ;
+    sh:description "Validates the structure of an IntermedialRelation." ;
+
+    # Disjoint with IntermedialObject
+    sh:not [
+        sh:class interim:IntermedialObject ;
+    ] ;
+
+    # Must have exactly one source medium
+    sh:property [
+        sh:path interim:hasSourceMedium ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class interim:Medium ;
+        sh:name "hasSourceMedium" ;
+        sh:message "An IntermedialRelation must have exactly one interim:hasSourceMedium." ;
+    ] ;
+
+    # Must have exactly one target medium
+    sh:property [
+        sh:path interim:hasTargetMedium ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class interim:Medium ;
+        sh:name "hasTargetMedium" ;
+        sh:message "An IntermedialRelation must have exactly one interim:hasTargetMedium." ;
+    ] ;
+
+    # Must produce at least one IntermedialObject
+    sh:property [
+        sh:path interim:producesObject ;
+        sh:minCount 1 ;
+        sh:class interim:IntermedialObject ;
+        sh:name "producesObject" ;
+        sh:message "An IntermedialRelation must produce at least one interim:IntermedialObject via interim:producesObject." ;
+    ] .
+
+
+# -----------------------------------------------------------------------------
+# 2. IntermedialObjectShape
+#    Validates interim:IntermedialObject instances.
+#    Must link back to the relation that produced it.
+# -----------------------------------------------------------------------------
+
+interim-sh:IntermedialObjectShape a sh:NodeShape ;
+    sh:targetClass interim:IntermedialObject ;
+    sh:name "Intermedial Object shape" ;
+    sh:description "Validates the structure of an IntermedialObject." ;
+
+    # Disjoint with IntermedialRelation
+    sh:not [
+        sh:class interim:IntermedialRelation ;
+    ] ;
+
+    # Must link back to exactly one producing relation
+    sh:property [
+        sh:path interim:objectProducedBy ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class interim:IntermedialRelation ;
+        sh:name "objectProducedBy" ;
+        sh:message "An IntermedialObject must have exactly one interim:objectProducedBy linking to an IntermedialRelation." ;
+    ] .
+
+
+# -----------------------------------------------------------------------------
+# 3. MediaConceptShape
+#    Validates SKOS media type concepts.
+# -----------------------------------------------------------------------------
+
+interim-sh:MediaConceptShape a sh:NodeShape ;
+    sh:targetNode interim:mediumImage, interim:mediumText ;
+    sh:name "Media Concept shape" ;
+    sh:description "Validates that media type concepts belong to the INTERIM media scheme." ;
+
+    sh:property [
+        sh:path skos:inScheme ;
+        sh:hasValue interim:mediaScheme ;
+        sh:minCount 1 ;
+        sh:name "inScheme" ;
+        sh:message "A media type concept must belong to interim:mediaScheme." ;
+    ] .
+
+
+# =============================================================================
+#  MODULE 2 — EKPHRASIS (GEkO classes in INTERIM context)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 4. EkphrasisShape
+#    In INTERIM, Ekphrasis is also an IntermedialObject (linked via
+#    interim:objectProducedBy). This extends GEkO constraints.
+# -----------------------------------------------------------------------------
+
+interim-sh:EkphrasisShape a sh:NodeShape ;
+    sh:targetClass geko:Ekphrasis ;
+    sh:name "Ekphrasis shape (INTERIM context)" ;
+    sh:description "Validates Ekphrasis entities in the INTERIM framework, including the intermedial link." ;
+
+    # Must link to at least one author (foaf:Person)
+    sh:property [
+        sh:path geko:hasAuthor ;
+        sh:minCount 1 ;
+        sh:class foaf:Person ;
+        sh:name "hasAuthor" ;
+        sh:message "An Ekphrasis must have at least one geko:hasAuthor pointing to a foaf:Person." ;
+    ] ;
+
+    # Must link to exactly one textual referent
+    sh:property [
+        sh:path geko:hasTextualReferent ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class lrmoo:F2_Expression ;
+        sh:name "hasTextualReferent" ;
+        sh:message "An Ekphrasis must have exactly one geko:hasTextualReferent (lrmoo:F2_Expression)." ;
+    ] ;
+
+    # Must link to exactly one iconic referent
+    sh:property [
+        sh:path geko:hasIconicReferent ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class lrmoo:F1_Work ;
+        sh:name "hasIconicReferent" ;
+        sh:message "An Ekphrasis must have exactly one geko:hasIconicReferent (lrmoo:F1_Work)." ;
+    ] ;
+
+    # Must have at least one annotation member
+    sh:property [
+        sh:path prov:hadMember ;
+        sh:minCount 1 ;
+        sh:class oa:Annotation ;
+        sh:name "hadMember" ;
+        sh:message "An Ekphrasis must have at least one oa:Annotation via prov:hadMember." ;
+    ] ;
+
+    # INTERIM-specific: must link to the producing IntermedialRelation
+    sh:property [
+        sh:path interim:objectProducedBy ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class interim:IntermedialRelation ;
+        sh:name "objectProducedBy" ;
+        sh:message "In INTERIM, an Ekphrasis must have exactly one interim:objectProducedBy linking to an IntermedialRelation." ;
+    ] .
+
+
+# MimeticEkphrasis / NotionalEkphrasis disjointness
+
+interim-sh:MimeticEkphrasisShape a sh:NodeShape ;
+    sh:targetClass geko:MimeticEkphrasis ;
+    sh:name "Mimetic Ekphrasis shape" ;
+    sh:not [ sh:class geko:NotionalEkphrasis ] .
+
+interim-sh:NotionalEkphrasisShape a sh:NodeShape ;
+    sh:targetClass geko:NotionalEkphrasis ;
+    sh:name "Notional Ekphrasis shape" ;
+    sh:not [ sh:class geko:MimeticEkphrasis ] .
+
+
+# =============================================================================
+#  MODULE 3 — ANNOTATION LAYER (OA + MLAO + HiCO)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 5. AnnotationShape
+# -----------------------------------------------------------------------------
+
+interim-sh:AnnotationShape a sh:NodeShape ;
+    sh:targetClass oa:Annotation ;
+    sh:name "Annotation shape" ;
+    sh:description "Validates Web Annotations in the INTERIM/GEkO context." ;
+
+    sh:property [
+        sh:path oa:hasBody ;
+        sh:minCount 1 ;
+        sh:name "hasBody" ;
+        sh:message "An Annotation must have at least one oa:hasBody." ;
+    ] ;
+
+    sh:property [
+        sh:path oa:hasTarget ;
+        sh:minCount 1 ;
+        sh:name "hasTarget" ;
+        sh:message "An Annotation must have at least one oa:hasTarget." ;
+    ] ;
+
+    sh:property [
+        sh:path geko:hasEkphrasticModality ;
+        sh:minCount 1 ;
+        sh:in ( geko:denotation geko:dynamization geko:integration ) ;
+        sh:name "hasEkphrasticModality" ;
+        sh:message "An Annotation must declare at least one geko:hasEkphrasticModality from {denotation, dynamization, integration}." ;
+    ] ;
+
+    sh:property [
+        sh:path mlao:hasAnchor ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class mlao:Anchor ;
+        sh:name "hasAnchor" ;
+        sh:message "An Annotation must have exactly one mlao:hasAnchor." ;
+    ] ;
+
+    sh:property [
+        sh:path prov:wasGeneratedBy ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class hico:InterpretationAct ;
+        sh:name "wasGeneratedBy" ;
+        sh:message "An Annotation must have exactly one prov:wasGeneratedBy (hico:InterpretationAct)." ;
+    ] ;
+
+    # Optional: creator of the annotation (the annotator agent)
+    sh:property [
+        sh:path dct:creator ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:name "creator" ;
+        sh:severity sh:Warning ;
+        sh:message "An Annotation should declare a dct:creator (the annotator agent)." ;
+    ] ;
+
+    # Optional: creation timestamp
+    sh:property [
+        sh:path dct:created ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:dateTime ;
+        sh:name "created" ;
+        sh:severity sh:Warning ;
+        sh:message "An Annotation should declare a dct:created timestamp." ;
+    ] .
+
+
+# -----------------------------------------------------------------------------
+# 6. TextualBodyShape
+# -----------------------------------------------------------------------------
+
+interim-sh:TextualBodyShape a sh:NodeShape ;
+    sh:targetClass oa:TextualBody ;
+    sh:name "Textual Body shape" ;
+
+    sh:property [
+        sh:path rdf:value ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:name "value" ;
+        sh:message "A TextualBody must have exactly one non-empty rdf:value." ;
+    ] ;
+
+    sh:property [
+        sh:path dc:format ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:name "format" ;
+        sh:severity sh:Warning ;
+        sh:message "A TextualBody should declare a dc:format." ;
+    ] .
+
+
+# -----------------------------------------------------------------------------
+# 7. SpecificResourceShape
+# -----------------------------------------------------------------------------
+
+interim-sh:SpecificResourceShape a sh:NodeShape ;
+    sh:targetClass oa:SpecificResource ;
+    sh:name "Specific Resource shape" ;
+
+    sh:property [
+        sh:path oa:hasSource ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:name "hasSource" ;
+        sh:message "A SpecificResource must have exactly one oa:hasSource (IRI)." ;
+    ] ;
+
+    sh:property [
+        sh:path oa:hasSelector ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class oa:FragmentSelector ;
+        sh:name "hasSelector" ;
+        sh:message "A SpecificResource must have exactly one oa:hasSelector (FragmentSelector)." ;
+    ] .
+
+
+# -----------------------------------------------------------------------------
+# 8. FragmentSelectorShape
+# -----------------------------------------------------------------------------
+
+interim-sh:FragmentSelectorShape a sh:NodeShape ;
+    sh:targetClass oa:FragmentSelector ;
+    sh:name "Fragment Selector shape" ;
+
+    sh:property [
+        sh:path rdf:value ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:pattern "^xywh=\\d+,\\d+,\\d+,\\d+$" ;
+        sh:name "value" ;
+        sh:message "A FragmentSelector rdf:value must match 'xywh=x,y,w,h'." ;
+    ] .
+
+
+# -----------------------------------------------------------------------------
+# 9. AnchorShape
+# -----------------------------------------------------------------------------
+
+interim-sh:AnchorShape a sh:NodeShape ;
+    sh:targetClass mlao:Anchor ;
+    sh:name "Anchor shape" ;
+
+    sh:property [
+        sh:path mlao:isAnchoredTo ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:name "isAnchoredTo" ;
+        sh:severity sh:Warning ;
+        sh:message "An Anchor should have mlao:isAnchoredTo (IRI of a CRM entity)." ;
+    ] ;
+
+    sh:property [
+        sh:path mlao:hasConceptualLevel ;
+        sh:maxCount 1 ;
+        sh:in ( icon:PreiconographicalSubject icon:IconographicalSubject icon:IconologicalSubject ) ;
+        sh:name "hasConceptualLevel" ;
+        sh:severity sh:Warning ;
+        sh:message "An Anchor should declare mlao:hasConceptualLevel." ;
+    ] .
+
+
+# -----------------------------------------------------------------------------
+# 10. InterpretationActShape
+# -----------------------------------------------------------------------------
+
+interim-sh:InterpretationActShape a sh:NodeShape ;
+    sh:targetClass hico:InterpretationAct ;
+    sh:name "Interpretation Act shape" ;
+
+    sh:property [
+        sh:path hico:hasInterpretationType ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:name "hasInterpretationType" ;
+        sh:message "An InterpretationAct must have exactly one hico:hasInterpretationType." ;
+    ] ;
+
+    sh:property [
+        sh:path hico:hasInterpretationCriterion ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:name "hasInterpretationCriterion" ;
+        sh:message "An InterpretationAct must have at least one hico:hasInterpretationCriterion." ;
+    ] .
+
+
+# -----------------------------------------------------------------------------
+# 11. PersonShape
+# -----------------------------------------------------------------------------
+
+interim-sh:PersonShape a sh:NodeShape ;
+    sh:targetClass foaf:Person ;
+    sh:name "Person shape" ;
+
+    sh:property [
+        sh:path foaf:name ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:name "name" ;
+        sh:message "A Person must have exactly one non-empty foaf:name." ;
+    ] .
+
+
+# -----------------------------------------------------------------------------
+# 12. F2_ExpressionShape (Textual Referent)
+# -----------------------------------------------------------------------------
+
+interim-sh:F2ExpressionShape a sh:NodeShape ;
+    sh:targetClass lrmoo:F2_Expression ;
+    sh:name "F2 Expression shape" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:name "label" ;
+        sh:severity sh:Warning ;
+        sh:message "An F2_Expression should have at least one rdfs:label." ;
+    ] .
+
+
+# -----------------------------------------------------------------------------
+# 13. F1_WorkShape (Iconic Referent)
+# -----------------------------------------------------------------------------
+
+interim-sh:F1WorkShape a sh:NodeShape ;
+    sh:targetClass lrmoo:F1_Work ;
+    sh:name "F1 Work shape" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:name "label" ;
+        sh:severity sh:Warning ;
+        sh:message "An F1_Work should have at least one rdfs:label." ;
+    ] .
+
+
+# -----------------------------------------------------------------------------
+# 14. EkphrasticModalityConceptShape
+# -----------------------------------------------------------------------------
+
+interim-sh:EkphrasticModalityConceptShape a sh:NodeShape ;
+    sh:targetNode geko:denotation, geko:dynamization, geko:integration ;
+    sh:name "Ekphrastic Modality Concept shape" ;
+
+    sh:property [
+        sh:path skos:inScheme ;
+        sh:hasValue geko:modalitiesScheme ;
+        sh:minCount 1 ;
+        sh:name "inScheme" ;
+        sh:message "An ekphrastic modality concept must belong to geko:modalitiesScheme." ;
+    ] .

@@ -1,0 +1,16 @@
+# CQ2.7b - Inverse retrieval based on punctual referents, from a given textual referent to the iconic referent it evokes
+
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geko: <https://w3id.org/geko/#>
+
+SELECT DISTINCT ?ekph ?iconicReferent
+WHERE {
+  BIND(<https://w3id.org/interim/ek-raimondi-kb/depisisLibri/ekphrasis/ek4/textual_ref> AS ?textual)
+
+  ?ekph rdf:type ?t ;
+        geko:hasTextualReferent ?textual ;
+        geko:hasIconicReferent ?iconicReferent .
+  ?t rdfs:subClassOf* geko:Ekphrasis .
+}
+ORDER BY ?ekph

@@ -1,0 +1,9 @@
+#CQ1.1 — Which intermedial relations are represented in the knowledge base?
+
+PREFIX interim: <https://w3id.org/interim/#>
+
+SELECT DISTINCT ?relation
+WHERE {
+  ?relation a interim:IntermedialRelation .
+}
+ORDER BY ?relation
