@@ -1,0 +1,266 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://w3id.org/interim/demo/iiif/3/19312/manifest/p7",
+  "type": "Manifest",
+  "label": {
+    "it": [
+      "Raimondi, Giuseppe. Quaderno manoscritto, \"Giotto. 12.3.1959\""
+    ]
+  },
+  "summary": {
+    "it": [
+      "Raimondi, Giuseppe. 1959. Quaderno manoscritto. Fondo Giuseppe Raimondi, Biblioteca Ezio Raimondi, Università di Bologna. RDq 99, FR.A QUADERNI.1 1959 7."
+    ]
+  },
+  "requiredStatement": {
+    "label": { "it": ["Attribution"] },
+    "value": {
+      "it": [
+        "Dipartimento di Filologia Classica e Italianistica - Universtà di Bologna"
+      ]
+    }
+  },
+  "metadata": [
+    {
+      "label": { "it": ["Titolo"] },
+      "value": {
+        "it": [
+          "Raimondi, Giuseppe. Quaderno manoscritto, \"Giotto. 12.3.1959\""
+        ]
+      }
+    },
+    {
+      "label": { "it": ["Segnatura"] },
+      "value": { "it": ["Inventario RDq 99"] }
+    },
+    {
+      "label": { "it": ["Data"] },
+      "value": { "it": ["1959"] }
+    },
+    {
+      "label": { "it": ["Dimensioni"] },
+      "value": { "it": ["10 carte, Altezza 22 cm, 15 pagine"] }
+    },
+    {
+      "label": { "it": ["Consistenza"] },
+      "value": { "it": ["quaderno"] }
+    },
+    {
+      "label": { "it": ["Autore"] },
+      "value": { "it": ["Giuseppe Raimondi"] }
+    },
+    {
+      "label": { "it": ["Collocazione"] },
+      "value": { "it": ["Collocazione FR.A QUADERNI.1 1959 7"] }
+    },
+    {
+      "label": { "it": ["Soggetto"] },
+      "value": { "it": ["Cesare Gnudi", "Giotto di Bondone"] }
+    },
+    {
+      "label": { "it": ["Lingua"] },
+      "value": { "it": ["ita"] }
+    },
+    {
+      "label": { "it": ["Citazione"] },
+      "value": {
+        "it": [
+          "Raimondi, Giuseppe. 1959. Quaderno manoscritto. Fondo Giuseppe Raimondi, Biblioteca Ezio Raimondi, Università di Bologna. RDq 99, FR.A QUADERNI.1 1959 7."
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://dl.ficlit.unibo.it/iiif/2/19312/canvas/p7",
+      "type": "Canvas",
+      "label": { "it": ["c3r"] },
+      "height": 2537,
+      "width": 1798,
+      "thumbnail": [
+        {
+          "id": "https://dl.ficlit.unibo.it/files/medium/cbd27aa896fd2594b01cb34c1df324a0970b509e.jpg",
+          "type": "Image",
+          "format": "image/jpeg",
+          "width": 142,
+          "height": 200
+        }
+      ],
+      "metadata": [
+        {
+          "label": { "en": ["Title"] },
+          "value": { "en": ["c3r"] }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://dl.ficlit.unibo.it/iiif/2/19312/annotationpage/p0007-painting",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://dl.ficlit.unibo.it/iiif/2/19312/annotation/p0007-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://dl.ficlit.unibo.it/iiif/2/19312/canvas/p7",
+              "body": {
+                "id": "https://dl.ficlit.unibo.it/iiif/2/204341/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 1798,
+                "height": 2537,
+                "service": [
+                  {
+                    "id": "https://dl.ficlit.unibo.it/iiif/2/204341",
+                    "type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "@context": [
+            "http://iiif.io/api/presentation/3/context.json",
+            "http://www.w3.org/ns/anno.jsonld",
+            {
+              "as": "https://www.w3.org/ns/activitystreams#",
+              "oa": "http://www.w3.org/ns/oa#",
+              "dc": "http://purl.org/dc/elements/1.1/",
+              "dcterms": "http://purl.org/dc/terms/",
+              "prov": "http://www.w3.org/ns/prov#",
+              "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+              "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+              "owl": "http://www.w3.org/2002/07/owl#",
+              "xsd": "http://www.w3.org/2001/XMLSchema#",
+              "geko": "https://w3id.org/geko/#",
+              "interim": "https://w3id.org/interim/ontology/",
+              "hico": "http://purl.org/emmedi/hico/",
+              "mlao": "https://w3id.org/mlao/ontology/",
+              "icon": "https://w3id.org/icon/ontology/",
+              "lrmoo": "http://iflastandards.info/ns/lrm/lrmoo/"
+            }
+          ],
+          "id": "https://w3id.org/interim/ek-raimondi-kb/giotto/ekphrasis/ek2_canvas7",
+          "type": "AnnotationPage",
+          "label": {
+            "en": [
+              "Ekphrasis in this page"
+            ]
+          },
+          "as:partOf": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/giotto/ekphrasis/ek2",
+            "type": "https://w3id.org/geko/#Ekphrasis"
+          },
+          "geko:hasAuthor": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/person/giuseppe_raimondi"
+          },
+          "geko:hasIconicReferent": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/giotto/ekphrasis/ek2/iconic_ref",
+            "type": "lrmoo:F1_Work",
+            "rdfs:label": "Giotto, Innocenzo III conferma la regola francescana, 1295",
+            "owl:sameAs": {
+              "id": "https://www.wikidata.org/wiki/Q3798976"
+            }
+          },
+          "geko:hasTextualReferent": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/giotto/ekphrasis/ek2/textual_ref",
+            "type": "lrmoo:F2_Expression",
+            "rdfs:label": "Raimondi, Giuseppe. Quaderno manoscritto, Giotto. 12.3.1959"
+          },
+          "interim:objectProducedBy": {
+            "id": "https://w3id.org/interim/ek-raimondi-kb/ekph_relation"
+          },
+          "prov:hadMember": [
+            {
+              "id": "https://w3id.org/interim/ek-raimondi-kb/giotto/ekphrasis/ek2/anno_0"
+            },
+            {
+              "id": "https://w3id.org/interim/ek-raimondi-kb/giotto/ekphrasis/ek2/anno_1"
+            },
+            {
+              "id": "https://w3id.org/interim/ek-raimondi-kb/giotto/ekphrasis/ek2/anno_2"
+            }
+          ],
+          "items": [
+            {
+              "id": "https://w3id.org/interim/ek-raimondi-kb/giotto/ekphrasis/ek2/anno_1",
+              "type": "Annotation",
+              "motivation": [
+                "commenting"
+              ],
+              "target": "https://dl.ficlit.unibo.it/iiif/2/19312/canvas/p7#xywh=158,1875,1424,49",
+              "body": {
+                "type": "TextualBody",
+                "format": "text/plain",
+                "language": "it",
+                "value": "il pontefice e i vescovi quasi pietrificati in un materia, in uno spirito di potenza, simili a statue dipinte"
+              },
+              "geko:hasEkphrasticModality": {
+                "id": "https://w3id.org/geko/dynamization"
+              },
+              "oa:hasTarget": [
+                {
+                  "type": "SpecificResource",
+                  "source": {
+                    "id": "https://dl.ficlit.unibo.it/iiif/2/19312/canvas/p7"
+                  },
+                  "selector": {
+                    "type": "FragmentSelector",
+                    "rdf:value": "xywh=158,1875,1424,49"
+                  },
+                  "rdfs:label": "Text fragment on the facsimile"
+                },
+                {
+                  "type": "SpecificResource",
+                  "source": {
+                    "id": "https://dl.ficlit.unibo.it/iiif/2/19312/canvas/p7"
+                  },
+                  "selector": {
+                    "type": "FragmentSelector",
+                    "rdf:value": "xywh=160,1953,1410,51"
+                  }
+                },
+                {
+                  "id": "https://w3id.org/interim/ek-raimondi-kb/giotto/ekphrasis/ek2/anno_1/target/image",
+                  "type": "SpecificResource",
+                  "source": {
+                    "id": "https://wd-image-positions.toolforge.org/iiif/Q3798976/P18/canvas/c0.json"
+                  },
+                  "selector": {
+                    "type": "FragmentSelector",
+                    "rdf:value": "xywh=460,355,321,551"
+                  }
+                }
+              ],
+              "mlao:hasAnchor": {
+                "type": "mlao:Anchor",
+                "mlao:hasConceptualLevel": {
+                  "id": "https://w3id.org/icon/ontology/IconographicalSubject"
+                }
+              },
+              "creator": {
+                "id": "https://w3id.org/interim/ek-raimondi-kb/annotator/agent_1"
+              },
+              "created": "2026-02-26T15:02:20.815000+00:00",
+              "prov:wasGeneratedBy": {
+                "id": "https://w3id.org/interim/ek-raimondi-kb/act/ek2/anno_2",
+                "type": "hico:InterpretationAct",
+                "hico:hasInterpretationType": {
+                  "id": "https://w3id.org/interim/ek-raimondi-kb/type/semantic-matching"
+                },
+                "hico:hasInterpretationCriterion": [
+                  {
+                    "id": "https://w3id.org/interim/ek-raimondi-kb/criterion/expert-image-alignment"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
